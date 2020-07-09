@@ -1,26 +1,47 @@
 /*-------------Fonts-------------*/
 
 @font-face {
-    font-family: "Creepy";
-    src: url("assets/fonts/creepy.woff") format("woff"),
-        url("assets/fonts/creepy.woff2") format("woff2")
+  font-family: "Creepy";
+  src: url("assets/fonts/Creepy.woff") format("woff"),
+    url("assets/fonts/Creepy.woff2") format("woff2")
 }
 
 @font-face {
-    font-family: "Lunacy";
-    src: url("assets/fonts/lunacy.woff") format("woff"),
-        url("assets/fonts/lunacy.woff2") format("woff2")
+  font-family: "Lunacy";
+  src: url("assets/fonts/Lunacy.woff") format("woff"),
+    url("assets/fonts/Lunacy.woff2") format("woff2")
 }
 
+/*-------------Background-------------*/
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 body {
-    margin: 0;
-    background: radial-gradient(#9D5900, #3D2200)
+  margin: 0;
+  background: radial-gradient(#9d5900, #3d2200);
 }
+
+/*-------------Game Info Headers-------------*/
+
+.page-title {
+  color: #ff6d00;
+  font-family: Creepy, serif;
+  font-weight: normal;
+  text-align: center;
+  font-size: 6em;
+}
+
+.game-info {
+    font-family: Lunacy, serif;
+    color: #ffbb89;
+    font-size: 4em;
+
+}
+
+/*-------------Cards-------------*/
