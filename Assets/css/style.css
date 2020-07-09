@@ -16,11 +16,11 @@
 
 * {
   box-sizing: border-box;
-  cursor: url("/Assets/Cursors/Ghost.cur"), auto;
 }
 
 html {
   min-height: 100vh;
+  cursor: url("/Assets/Cursors/Ghost.cur"), auto;
 }
 
 body {
@@ -67,6 +67,10 @@ body {
   width: 125px;
 }
 
+.card:hover {
+    cursor: url("/Assets/Cursors/GhostHover.cur"), auto;
+}
+
 .card-face {
   position: absolute;
   width: 100%;
@@ -90,7 +94,7 @@ body {
   transform: rotateY(-0);
 }
 
-.card:hover .card-value {
+.card.matched .card-value {
     animation: dance 1s linear infinite 500ms;
 }
 
