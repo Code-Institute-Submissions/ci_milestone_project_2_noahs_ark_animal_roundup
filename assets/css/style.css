@@ -1,0 +1,26 @@
+/*-------------Fonts-------------*/
+
+@font-face {
+    font-family: "Creepy";
+    src: url("assets/fonts/creepy.woff") format("woff"),
+        url("assets/fonts/creepy.woff2") format("woff2")
+}
+
+@font-face {
+    font-family: "Lunacy";
+    src: url("assets/fonts/lunacy.woff") format("woff"),
+        url("assets/fonts/lunacy.woff2") format("woff2")
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+    background: radial-gradient(#9D5900, #3D2200)
+}
