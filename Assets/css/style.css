@@ -79,14 +79,36 @@ body {
   border-style: solid;
 }
 
+.card.visible .card-back {
+  transform: rotateY(-180deg);
+}
+
+.card.visible .card-front {
+  transform: rotateY(-0);
+}
+
 .card-back {
-    background-color: black;
-    border-color: #ff6d00
+  background-color: black;
+  border-color: #ff6d00;
 }
 
 .card-front {
-  transform: rotateX(180deg);
+  background-color: #ffbb89;
+  border-color: #333;
+  transform: rotateY(180deg);
 }
+
+.card-value {
+    transition: transform 100ms ease-in-out;
+    transform: scale(.9);
+}
+
+.card-front:hover .card-value {
+    transform: scale(1);
+
+}
+
+/*-------------Cards Corners-------------*/
 
 .cob-web {
   position: absolute;
@@ -95,9 +117,9 @@ body {
   transition: width 100ms ease-in-out, height 100ms ease-in-out;
 }
 
-.card-back:hover .cob-web {
-    width: 52px;
-    height: 52px;
+.card-face:hover .cob-web {
+  width: 52px;
+  height: 52px;
 }
 
 .cob-web-top-left {
@@ -122,6 +144,7 @@ body {
   bottom: 0;
   right: 0;
 }
+/*-------------Card Back Main Image-------------*/
 
 .spider {
   align-self: flex-start;
