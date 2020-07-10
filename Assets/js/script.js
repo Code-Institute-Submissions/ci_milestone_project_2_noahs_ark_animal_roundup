@@ -5,10 +5,10 @@
 
 class AudioController {
     constructor() {
-        this.bgMusic = new Audio("/Assets/Audio/creepy.mp3");
+        this.bgMusic = new Audio("/Assets/Audio/punch-deck-100-seconds.mp3");
         this.flipSound = new Audio("/Assets/Audio/flip.wav");
         this.matchSound = new Audio("/Assets/Audio/match.wav");
-        this.victorySound = new Audio("/Assets/Audio/victory.wav");
+        this.victorySound = new Audio("/Assets/Audio/vlad-gluschenko-boat.mp3");
         this.gameOverSound = new Audio("/Assets/Audio/gameOver.wav");
         this.bgMusic.volume = 0.5;
         this.bgMusic.loop = true;
@@ -19,6 +19,8 @@ class AudioController {
     stopMusic() {
         this.bgMusic.pause();
         this.bgMusic.currentTime = 0;
+        this.victorySound.pause();
+        this.victorySound.currentTime = 0;
     }
     flip() {
         this.flipSound.play();
@@ -57,6 +59,7 @@ class MixOrMatch {
         this.matchedCards = [];
         this.busy = true;
         setTimeout(() => {
+            this.audioController.stopMusic();
             this.audioController.startMusic();
             this.shuffleCards();
             this.countdown = this.startCountdown();

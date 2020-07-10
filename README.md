@@ -22,4 +22,18 @@ Why does JSHint throw a warning if I am using const?(https://stackoverflow.com/q
 Martin Berube via IronArchive for the adorable animal icons.
 Iconset: Animal Icons by Martin Berube (46 icons)(https://iconarchive.com/show/animal-icons-by-martin-berube.html)
 
+Punch Deck via free-stock-music.com for the excellent, dramatic & suspenseful cinematic track.
+100 Seconds(https://www.free-stock-music.com/punch-deck-100-seconds.html)
+100 Seconds by Punch Deck | https://soundcloud.com/punch-deck
+Music promoted by https://www.free-stock-music.com
+Creative Commons Attribution 3.0 Unported License
+https://creativecommons.org/licenses/by/3.0/deed.en_US
+
+Vlad Gluschenko via free-stock-music.com for the wonderful and positive electronic track.
+Boat(https://www.free-stock-music.com/vlad-gluschenko-boat.html)
+Boat by Vlad Gluschenko | https://soundcloud.com/vgl9
+Music promoted by https://www.free-stock-music.com
+Creative Commons Attribution 3.0 Unported License
+https://creativecommons.org/licenses/by/3.0/deed.en_US
+
 Known Bugs:
