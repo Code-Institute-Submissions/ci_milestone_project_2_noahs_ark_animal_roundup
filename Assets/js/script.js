@@ -1,3 +1,6 @@
+/*jshint esversion: 6 */
+// Added to avoid jshint errors when checking code at https://jshint.com/
+
 //----------Audio Controls----------
 
 class AudioController {
@@ -97,17 +100,17 @@ class MixOrMatch {
         this.matchedCards.push(card2);
         card1.classList.add('matched');
         card2.classList.add('matched');
-        this.audioController.matched();
+        this.audioController.match();
         if(this.matchedCards.length === this.cardsArray)
             this.victory();
     }
 
-    cardMisMatch(card1, card2) {
+     cardMisMatch(card1, card2) {
         this.busy = true;
         setTimeout(() => {
             card1.classList.remove('visible');
             card2.classList.remove('visible');
-            this.busy = true;
+            this.busy = false;
         }, 1000);
     }
 
