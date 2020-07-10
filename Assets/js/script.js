@@ -33,14 +33,14 @@ class AudioController {
     }
 }
 
-//----------Match Function----------
+//----------Main Function----------
 
 class MixOrMatch {
     constructor(totalTime, cards) {
         this.cardsArray = cards;
         this.totalTime = totalTime;
         this.timeRemaining = totalTime;
-        this.time = document.getElementById('time-remaining');
+        this.timer = document.getElementById('time-remaining')
         this.ticker = document.getElementById('flips');
         this.audioController = new AudioController();
     }
@@ -50,9 +50,23 @@ class MixOrMatch {
         this.timeRemaining = this.totalTime;
         this.matchedCards = [];
         this.busy = true;
-
-        this.shuffleCards();
+        setTimeout(() => {
+            this.audioController.startMusic();
+            this.shuffleCards();
+            this.countDown = this.startCountdown();
+            this.busy = false;
+        }, 500);
+        this.hideCards();
+        this.timer.innerText = this.timeRemaining;
+        this.ticker.innerText = this.totalClicks;
     }
+    hideCards() {
+        this.cardsArray.forEach(card => {
+            card.classList.remove('visible');
+            card.classList.remove('matched');
+        });
+    }
+
     flipCard(card) {
         if(this.canFlipCard(card)) {
             this.audioController.flip();
@@ -63,6 +77,22 @@ class MixOrMatch {
             // if statement
         }
     }
+    startCountdown() {
+        return setInterval(() => {
+            this.timeRemaining--;
+            this.timer.innerText = this.timeRemaining;
+            if(this.timeRemaining === 0)
+                this.gameOver();
+        }, 1000);
+    }
+    gameOver() {
+        clearInterval(this.countdown);
+        this.audioController.gameOver();
+        document.getElementById('game-over-text').classList.add('visible');
+    }
+
+    //----------Fisher-Yates Shuffle Algorithm----------
+
     shuffleCards() {
         for(let i = this.cardsArray.length - 1; i > 0; i--) {
             let randIndex = Math.floor(Math.random() * (i+1));
