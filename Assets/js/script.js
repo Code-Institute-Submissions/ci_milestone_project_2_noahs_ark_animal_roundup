@@ -54,6 +54,8 @@ class MixOrMatch {
     flipCard(card) {
         if(this.canFlipCard(card)) {
             this.audioController.flip();
+            this.totalClicks++;
+            this.ticker.innerText = this.totalClicks;
         }
     }
     canFlipCard(card) {
