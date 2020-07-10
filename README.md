@@ -42,8 +42,16 @@ Perfect Thunder Storm Sound(http://soundbible.com/916-Perfect-Thunder-Storm.html
 Fesliyan Studios for their free foliage sound effects.
 Hitting Bushes Branches G Sound Effect(https://www.fesliyanstudios.com/royalty-free-sound-effects-download/foliage-270)
 
-Nikita Golubev via flaticon.com for her grass icon.
+Nikita Golubev via flaticon.com for their grass icon.
 Grass free icon(https://www.flaticon.com/free-icon/grass_2897293)
 
+Good Ware via flaticon.com for their leaf icon.
+Leaf free icon (https://www.flaticon.com/free-icon/leaf_861054)
+
+Freepik via flaticon.com for their vines icon.
+Vines free icon (https://www.flaticon.com/free-icon/vines_3195853?term=vines&page=2&position=62)
+
+Ginifab for their excellent color picker app so I could get the HEX from images.
+(https://www.ginifab.com/feeds/pms/color_picker_from_image.php).
 
 Known Bugs:

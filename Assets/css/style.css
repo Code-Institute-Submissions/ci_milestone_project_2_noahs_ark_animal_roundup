@@ -204,19 +204,43 @@ body {
   bottom: 0;
   right: 0;
 }
+
+.vines {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  transition: width 100ms ease-in-out, height 100ms ease-in-out;
+}
+
+.card-face:hover .vines {
+  width: 30px;
+  height: 30px;
+}
+
+.vines-top-left {
+  top: 0;
+  left: 0;
+}
+
+.vines-top-right {
+    transform: scaleX(-1);
+    top: 0;
+    right: 0;
+}
+
+.vines-bottom-left {
+  transform: scaleX(-1) rotate(180deg);
+  bottom: 0;
+  left: 0;
+}
+
+.vines-bottom-right {
+  transform: rotate(180deg);
+  bottom: 0;
+  right: 0;
+}
+
 /*-------------Card Back Main Image-------------*/
-
-
-
-.spider {
-  align-self: flex-start;
-  transform: translateY(-10px);
-  transition: transform 100ms ease-in-out;
-}
-
-.card-back:hover .spider {
-  transform: translateY(0);
-}
 
 .grass {
     max-width:100%;
@@ -226,7 +250,7 @@ body {
 }
 
 .card-back:hover .grass {
-  transform: translateY(0);
+  max-width:115%;
 }
 
 /*-------------Media Queries-------------*/
