@@ -9,7 +9,7 @@ class AudioController {
         this.flipSound = new Audio("/Assets/Audio/flip.wav");
         this.matchSound = new Audio("/Assets/Audio/match.wav");
         this.victorySound = new Audio("/Assets/Audio/vlad-gluschenko-boat.mp3");
-        this.gameOverSound = new Audio("/Assets/Audio/gameOver.wav");
+        this.gameOverSound = new Audio("/Assets/Audio/perfect-thunder-storm.mp3");
         this.bgMusic.volume = 0.5;
         this.bgMusic.loop = true;
     }
@@ -21,6 +21,8 @@ class AudioController {
         this.bgMusic.currentTime = 0;
         this.victorySound.pause();
         this.victorySound.currentTime = 0;
+        this.gameOverSound.pause();
+        this.gameOverSound.currentTime = 0;
     }
     flip() {
         this.flipSound.play();

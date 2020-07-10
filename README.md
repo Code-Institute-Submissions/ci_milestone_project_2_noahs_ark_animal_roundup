@@ -36,4 +36,8 @@ Music promoted by https://www.free-stock-music.com
 Creative Commons Attribution 3.0 Unported License
 https://creativecommons.org/licenses/by/3.0/deed.en_US
 
+SoundBible.com for their storm sound file.
+Perfect Thunder Storm Sound(http://soundbible.com/916-Perfect-Thunder-Storm.html)
+
+
 Known Bugs:
