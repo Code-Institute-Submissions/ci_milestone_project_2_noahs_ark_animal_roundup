@@ -48,6 +48,8 @@ class MixOrMatch {
         this.audioController = new AudioController();
     }
 
+    //----------Overlays----------
+
     startGame() {
         this.cardToCheck = null;
         this.totalClicks = 0;
@@ -64,6 +66,29 @@ class MixOrMatch {
         this.timer.innerText = this.timeRemaining;
         this.ticker.innerText = this.totalClicks;
     }
+
+    startCountdown() {
+        return setInterval(() => {
+            this.timeRemaining--;
+            this.timer.innerText = this.timeRemaining;
+            if(this.timeRemaining === 0)
+                this.gameOver();
+        }, 1000);
+    }
+
+    gameOver() {
+        clearInterval(this.countdown);
+        this.audioController.gameOver();
+        document.getElementById('game-over-text').classList.add('visible');
+    }
+
+    victory() {
+        clearInterval(this.countDown);
+        this.audioController.victory();
+        document.getElementById('victory-text').classList.add('visible');
+    }
+
+    //----------Card Functionality----------
 
     hideCards() {
         this.cardsArray.forEach(card => {
@@ -118,25 +143,8 @@ class MixOrMatch {
         return card.getElementsByClassName('card-value')[0].src;
     }
 
-    startCountdown() {
-        return setInterval(() => {
-            this.timeRemaining--;
-            this.timer.innerText = this.timeRemaining;
-            if(this.timeRemaining === 0)
-                this.gameOver();
-        }, 1000);
-    }
-
-    gameOver() {
-        clearInterval(this.countdown);
-        this.audioController.gameOver();
-        document.getElementById('game-over-text').classList.add('visible');
-    }
-
-    victory() {
-        clearInterval(this.countDown);
-        this.audioController.victory();
-        document.getElementById('victory-text').classList.add('visible');
+    canFlipCard(card) {
+        return (!this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck);
     }
 
     //----------Fisher-Yates Shuffle Algorithm----------
@@ -148,10 +156,14 @@ class MixOrMatch {
             this.cardsArray[i].style.order = randIndex;
         }
     }
+}
 
-    canFlipCard(card) {
-        return (!this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck);
-    }
+//----------Initial Loader----------
+
+if (document.readyState == 'loading') {
+    document.addEventListener('DOMContentLoaded', ready);
+} else {
+    ready();
 }
 
 //----------Ready Function----------
@@ -172,12 +184,4 @@ function ready() {
             game.flipCard(card);
         });
     });
-}
-
-//----------Initial Loader----------
-
-if (document.readyState == 'loading') {
-    document.addEventListener('DOMContentLoaded', ready);
-} else {
-    ready();
 }
