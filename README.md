@@ -51,4 +51,11 @@ Vines free icon (https://www.flaticon.com/free-icon/vines_3195853?term=vines&pag
 Ginifab for their excellent color picker app so I could get the HEX from images.
 (https://www.ginifab.com/feeds/pms/color_picker_from_image.php).
 
+bouderbabari via rw-designer.com for great staff cursor icon.
+Ekos Jesus Stick Icon Details(http://www.rw-designer.com/icon-detail/4492)
+
+Pete Klassen via 1001fonts.com for the fantastic Lord of the Rings styled font, Aniron.
+Aniron Font Family(https://www.1001fonts.com/aniron-font.html)
+
+
 Known Bugs:
