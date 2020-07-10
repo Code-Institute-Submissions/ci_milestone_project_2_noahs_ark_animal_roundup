@@ -12,3 +12,6 @@ CSS @keyframes Rule(https://www.w3schools.com/cssref/css3_pr_animation-keyframes
 
 w3wchools.com for a quick reminder on how to do comments in Javascript.
 Single Line Comments(https://www.w3schools.com/js/js_comments.asp)
+
+w3wchools.com for a better understanding of how the Math.Random function works.
+JavaScript Random(https://www.w3schools.com/js/js_random.asp)
