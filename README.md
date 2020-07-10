@@ -19,6 +19,7 @@ JavaScript Random(https://www.w3schools.com/js/js_random.asp)
 StackOverFlow for getting my jshint to calm down with the errors.
 Why does JSHint throw a warning if I am using const?(https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const)
 
-Known Bugs:
+Martin Berube via IronArchive for the adorable animal icons.
+Iconset: Animal Icons by Martin Berube (46 icons)(https://iconarchive.com/show/animal-icons-by-martin-berube.html)
 
-On gameover restart, timer speeds up.
+Known Bugs:
