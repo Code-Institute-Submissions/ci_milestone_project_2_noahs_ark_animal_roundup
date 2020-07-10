@@ -206,6 +206,8 @@ body {
 }
 /*-------------Card Back Main Image-------------*/
 
+
+
 .spider {
   align-self: flex-start;
   transform: translateY(-10px);
@@ -213,6 +215,17 @@ body {
 }
 
 .card-back:hover .spider {
+  transform: translateY(0);
+}
+
+.grass {
+    max-width:100%;
+    height:auto;
+    transform: translateY(-10px);
+    transition: transform 100ms ease-in-out;
+}
+
+.card-back:hover .grass {
   transform: translateY(0);
 }
 

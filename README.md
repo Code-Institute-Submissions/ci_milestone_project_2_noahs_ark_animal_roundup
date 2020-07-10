@@ -39,5 +39,11 @@ https://creativecommons.org/licenses/by/3.0/deed.en_US
 SoundBible.com for their storm sound file.
 Perfect Thunder Storm Sound(http://soundbible.com/916-Perfect-Thunder-Storm.html)
 
+Fesliyan Studios for their free foliage sound effects.
+Hitting Bushes Branches G Sound Effect(https://www.fesliyanstudios.com/royalty-free-sound-effects-download/foliage-270)
+
+Nikita Golubev via flaticon.com for her grass icon.
+Grass free icon(https://www.flaticon.com/free-icon/grass_2897293)
+
 
 Known Bugs:
