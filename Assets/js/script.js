@@ -40,10 +40,11 @@ class MixOrMatch {
         this.cardsArray = cards;
         this.totalTime = totalTime;
         this.timeRemaining = totalTime;
-        this.timer = document.getElementById('time-remaining')
+        this.timer = document.getElementById('time-remaining');
         this.ticker = document.getElementById('flips');
         this.audioController = new AudioController();
     }
+
     startGame() {
         this.cardToCheck = null;
         this.totalClicks = 0;
@@ -60,6 +61,7 @@ class MixOrMatch {
         this.timer.innerText = this.timeRemaining;
         this.ticker.innerText = this.totalClicks;
     }
+
     hideCards() {
         this.cardsArray.forEach(card => {
             card.classList.remove('visible');
@@ -74,9 +76,45 @@ class MixOrMatch {
             this.ticker.innerText = this.totalClicks;
             card.classList.add('visible');
 
-            // if statement
+           if(this.cardToCheck)
+                this.checkForCardMatch(card);
+           else
+            this.cardToCheck = card;
         }
     }
+
+    checkForCardMatch(card) {
+        if(this.getCardType(card) === this.getCardType(this.cardToCheck))
+            this.cardMatch(card, this.cardToCheck);
+        else
+            this.cardMisMatch(card, this.cardToCheck);
+
+        this.cardToCheck = null;
+    }
+
+    cardMatch(card1, card2) {
+        this.matchedCards.push(card1);
+        this.matchedCards.push(card2);
+        card1.classList.add('matched');
+        card2.classList.add('matched');
+        this.audioController.matched();
+        if(this.matchedCards.length === this.cardsArray)
+            this.victory();
+    }
+
+    cardMisMatch(card1, card2) {
+        this.busy = true;
+        setTimeout(() => {
+            card1.classList.remove('visible');
+            card2.classList.remove('visible');
+            this.busy = true;
+        }, 1000);
+    }
+
+    getCardType(card) {
+        return card.getElementsByClassName('card-value')[0].src;
+    }
+
     startCountdown() {
         return setInterval(() => {
             this.timeRemaining--;
@@ -85,10 +123,17 @@ class MixOrMatch {
                 this.gameOver();
         }, 1000);
     }
+
     gameOver() {
         clearInterval(this.countdown);
         this.audioController.gameOver();
         document.getElementById('game-over-text').classList.add('visible');
+    }
+
+    victory() {
+        clearInterval(this.countDown);
+        this.audioController.victory();
+        document.getElementById('victory-text').classList.add('visible');
     }
 
     //----------Fisher-Yates Shuffle Algorithm----------
@@ -102,11 +147,9 @@ class MixOrMatch {
     }
 
     canFlipCard(card) {
-        return true;
-        // return (!this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck)
+        return (!this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck);
     }
 }
-
 
 //----------Ready Function----------
 
@@ -135,6 +178,3 @@ if (document.readyState == 'loading') {
 } else {
     ready();
 }
-
-let audioController = new AudioController();
-audioController.startMusic();
