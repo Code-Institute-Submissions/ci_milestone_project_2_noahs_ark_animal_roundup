@@ -59,7 +59,7 @@ class MixOrMatch {
         setTimeout(() => {
             this.audioController.startMusic();
             this.shuffleCards();
-            this.countDown = this.startCountdown();
+            this.countdown = this.startCountdown();
             this.busy = false;
         }, 500);
         this.hideCards();
@@ -83,7 +83,7 @@ class MixOrMatch {
     }
 
     victory() {
-        clearInterval(this.countDown);
+        clearInterval(this.countdown);
         this.audioController.victory();
         document.getElementById('victory-text').classList.add('visible');
     }
