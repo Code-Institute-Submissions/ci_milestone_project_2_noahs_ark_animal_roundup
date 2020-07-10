@@ -20,7 +20,7 @@
 
 html {
   min-height: 100vh;
-  cursor: url("/Assets/Cursors/Ghost.cur"), auto;
+  cursor: url("/Assets/Cursors/ekos-jesus-stick.ico"), auto;
 }
 
 body {
@@ -102,10 +102,6 @@ body {
   position: relative;
   height: 175px;
   width: 125px;
-}
-
-.card:hover {
-    cursor: url("/Assets/Cursors/GhostHover.cur"), auto;
 }
 
 .card-face {

@@ -45,9 +45,6 @@ Hitting Bushes Branches G Sound Effect(https://www.fesliyanstudios.com/royalty-f
 Nikita Golubev via flaticon.com for their grass icon.
 Grass free icon(https://www.flaticon.com/free-icon/grass_2897293)
 
-Good Ware via flaticon.com for their leaf icon.
-Leaf free icon (https://www.flaticon.com/free-icon/leaf_861054)
-
 Freepik via flaticon.com for their vines icon.
 Vines free icon (https://www.flaticon.com/free-icon/vines_3195853?term=vines&page=2&position=62)
 
