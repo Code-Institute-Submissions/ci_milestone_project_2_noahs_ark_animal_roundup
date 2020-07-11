@@ -21,8 +21,8 @@ body {
   margin: 0;
   background: radial-gradient(
       circle at top right,
-      black,
-      blue
+      #18206F,
+      #2F52E0
     );
 }
 

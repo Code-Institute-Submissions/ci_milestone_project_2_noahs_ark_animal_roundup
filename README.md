@@ -54,10 +54,10 @@ Ginifab for their excellent color picker app so I could get the HEX from images.
 bouderbabari via rw-designer.com for great staff cursor icon.
 Ekos Jesus Stick Icon Details(http://www.rw-designer.com/icon-detail/4492)
 
-Pete Klassen via 1001fonts.com for the fantastic Lord of the Rings styled font, Aniron.
-Aniron Font Family(https://www.1001fonts.com/aniron-font.html)
-
 GoogleFonts for the BubblegumSans font.
 (https://fonts.google.com/specimen/Bubblegum+Sans)
+
+Coolors.co for use of their color pallete generator. 
+(https://coolors.co/0071bd-fffffc-2a2b2a-a8763e).
 
 Known Bugs:
