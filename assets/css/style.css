@@ -216,6 +216,63 @@ body {
 
 /*-------------Media Queries-------------*/
 
+/*----------iPad----------*/
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .overlay-text-small { 
+        font-size: 1em;
+    }
+
+    .overlay-text.visible {
+        display: flex;
+        flex-direction: column;
+        animation: overlay-grow 500ms forwards;
+    }
+
+    @keyframes overlay-grow {
+        from {
+            background-color: rgba(0, 0, 0, 0);
+            font-size: 0;
+        }
+        to {
+            background-color: rgba(0, 0, 0, 0.8);
+            font-size: 2em;
+        }
+    }
+}
+
+/*----------800px Point----------*/
+@media (max-width: 800px) {
+    .overlay-text { 
+        font-size: 1em;
+    }
+
+    .overlay-text-small { 
+        font-size: 0.75em;
+    }
+
+    .overlay-text.visible {
+        display: flex;
+        flex-direction: column;
+        animation: overlay-grow 500ms forwards;
+    }
+
+    @keyframes overlay-grow {
+        from {
+            background-color: rgba(0, 0, 0, 0);
+            font-size: 0;
+        }
+        to {
+            background-color: rgba(0, 0, 0, 0.8);
+            font-size: 1.5em;
+        }
+    }
+}
+
+/*----------600px Point----------*/
 @media (max-width: 600px) {
     .game-container {
         grid-template-columns: repeat(2, auto);
@@ -224,5 +281,102 @@ body {
     .game-info-container {
         flex-direction: column;
         align-items: center;
+    }
+
+    .overlay-text { 
+        font-size: 1em;
+    }
+
+    .overlay-text-small { 
+        font-size: 0.75em;
+    }
+
+    .overlay-text.visible {
+        display: flex;
+        flex-direction: column;
+        animation: overlay-grow 500ms forwards;
+    }
+
+    @keyframes overlay-grow {
+        from {
+            background-color: rgba(0, 0, 0, 0);
+            font-size: 0;
+        }
+        to {
+            background-color: rgba(0, 0, 0, 0.8);
+            font-size: 1.5em;
+        }
+    }
+}
+
+/*----------iPhone 6----------*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .game-container {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .game-info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .overlay-text-small { 
+        font-size: 0.75em;
+    }
+
+    .overlay-text.visible {
+        display: flex;
+        flex-direction: column;
+        animation: overlay-grow 500ms forwards;
+    }
+
+    @keyframes overlay-grow {
+        from {
+            background-color: rgba(0, 0, 0, 0);
+            font-size: 0;
+        }
+        to {
+            background-color: rgba(0, 0, 0, 0.8);
+            font-size: 1.5em;
+        }
+    }
+}
+
+/*----------Galaxy S5----------*/
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) {
+    .game-container {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .game-info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .overlay-text-small { 
+        font-size: 0.75em;
+    }
+
+    .overlay-text.visible {
+        display: flex;
+        flex-direction: column;
+        animation: overlay-grow 500ms forwards;
+    }
+
+    @keyframes overlay-grow {
+        from {
+            background-color: rgba(0, 0, 0, 0);
+            font-size: 0;
+        }
+        to {
+            background-color: rgba(0, 0, 0, 0.8);
+            font-size: 1.5em;
+        }
     }
 }

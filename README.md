@@ -60,4 +60,7 @@ GoogleFonts for the BubblegumSans font.
 Coolors.co for use of their color pallete generator. 
 (https://coolors.co/0071bd-fffffc-2a2b2a-a8763e).
 
+Css-tricks.com for the list of media query sizes.
+(https://css-tricks.com/snippets/css/media-queries-for-standard-devices/)
+
 Known Bugs:
