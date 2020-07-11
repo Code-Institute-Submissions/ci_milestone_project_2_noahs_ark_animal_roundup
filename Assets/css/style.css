@@ -149,6 +149,9 @@ body {
 }
 
 .card-value {
+    position: absolute;
+    width: 100px;
+    height: 100px;
     transition: transform 100ms ease-in-out;
     transform: scale(.9);
 }
