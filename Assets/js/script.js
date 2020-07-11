@@ -1,5 +1,3 @@
-/*jshint esversion: 6 */
-// Added to avoid jshint errors when checking code at https://jshint.com/
 
 //----------Audio Controls----------
 
