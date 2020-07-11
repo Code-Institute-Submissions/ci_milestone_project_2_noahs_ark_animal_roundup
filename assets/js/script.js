@@ -3,11 +3,11 @@
 
 class AudioController {
     constructor() {
-        this.bgMusic = new Audio("/Assets/Audio/punch-deck-100-seconds.mp3");
-        this.flipSound = new Audio("/Assets/Audio/hitting-bushes-branches-g.mp3");
-        this.matchSound = new Audio("/Assets/Audio/match.wav");
-        this.victorySound = new Audio("/Assets/Audio/vlad-gluschenko-boat.mp3");
-        this.gameOverSound = new Audio("/Assets/Audio/perfect-thunder-storm.mp3");
+        this.bgMusic = new Audio("/assets/audio/punch-deck-100-seconds.mp3");
+        this.flipSound = new Audio("/assets/audio/hitting-bushes-branches-g.mp3");
+        this.matchSound = new Audio("/assets/audio/match.wav");
+        this.victorySound = new Audio("/assets/audio/vlad-gluschenko-boat.mp3");
+        this.gameOverSound = new Audio("/assets/audio/perfect-thunder-storm.mp3");
         this.bgMusic.volume = 0.5;
         this.bgMusic.loop = true;
     }
