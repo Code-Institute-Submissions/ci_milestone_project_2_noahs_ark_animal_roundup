@@ -57,5 +57,7 @@ Ekos Jesus Stick Icon Details(http://www.rw-designer.com/icon-detail/4492)
 Pete Klassen via 1001fonts.com for the fantastic Lord of the Rings styled font, Aniron.
 Aniron Font Family(https://www.1001fonts.com/aniron-font.html)
 
+GoogleFonts for the BubblegumSans font.
+(https://fonts.google.com/specimen/Bubblegum+Sans)
 
 Known Bugs:
