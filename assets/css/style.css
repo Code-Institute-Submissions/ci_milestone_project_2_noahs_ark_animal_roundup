@@ -79,7 +79,7 @@ body {
         font-size: 0;
     }
     to {
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.9);
         font-size: 3em;
     }
 }
@@ -114,14 +114,20 @@ body {
   border-width: 1px;
   border-style: solid;
   transition: transform 500ms ease-in-out;
+  -ms-transition: transform 500ms ease-in-out;
+  -webkit-transition: transform 500ms ease-in-out;
 }
 
 .card.visible .card-back {
   transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
 }
 
 .card.visible .card-front {
-  transform: rotateY(-0);
+    transform: rotateY(-0);
+    -ms-transform: rotateY(-0);
+    -webkit-transform: rotateY(-0);
 }
 
 .card.matched .card-value {
@@ -149,6 +155,8 @@ body {
   background-color: #8cc152;
   border-color: #3c4f27;
   transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 .card-value {
@@ -238,7 +246,7 @@ body {
             font-size: 0;
         }
         to {
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.9);
             font-size: 2em;
         }
     }
@@ -266,7 +274,7 @@ body {
             font-size: 0;
         }
         to {
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.9);
             font-size: 1.5em;
         }
     }
@@ -303,7 +311,7 @@ body {
             font-size: 0;
         }
         to {
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.9);
             font-size: 1.5em;
         }
     }
@@ -339,7 +347,7 @@ body {
             font-size: 0;
         }
         to {
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.9);
             font-size: 1.5em;
         }
     }
@@ -375,7 +383,7 @@ body {
             font-size: 0;
         }
         to {
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.9);
             font-size: 1.5em;
         }
     }
