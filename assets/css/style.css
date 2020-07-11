@@ -97,6 +97,7 @@ body {
 
 .card {
   position: relative;
+  display: inline-block;
   height: 175px;
   width: 125px;
 }
