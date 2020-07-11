@@ -2,8 +2,7 @@
 
 @font-face {
   font-family: "BubblegumSans";
-  src: url("/assets/fonts/bubblegumSans-Regular.ttf"),
-    url("/assets/fonts/bubblegumSans-Regular.ttf");
+  src: url("../fonts/bubblegumSans-Regular.ttf");
 }
 
 /*-------------Background-------------*/
@@ -14,7 +13,7 @@
 
 html {
   min-height: 100vh;
-  cursor: url("/assets/cursors/ekos-jesus-stick.ico"), auto;
+  cursor: url("../cursors/ekos-jesus-stick.ico"), auto;
 }
 
 body {
