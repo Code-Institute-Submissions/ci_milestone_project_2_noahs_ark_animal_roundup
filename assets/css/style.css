@@ -113,6 +113,8 @@ body {
   align-items: center;
   overflow: hidden;
   backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   border-radius: 12px;
   border-width: 1px;
   border-style: solid;
@@ -151,12 +153,12 @@ body {
 
 .card-back {
   background-color: #3c4f27;
-  border-color: #3c4f27;
+  border-color: black;
 }
 
 .card-front {
   background-color: #8cc152;
-  border-color: #3c4f27;
+  border-color: black;
   transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);

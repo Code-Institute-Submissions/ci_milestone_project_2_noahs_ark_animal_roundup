@@ -66,5 +66,7 @@ Css-tricks.com for the list of media query sizes.
 Pixlr.com for their fantastic image edittor that allows you to keep it's transperancy.
 (https://pixlr.com/x/)
 
+CanIUse.com for clarifiation about the backface use for IOS devices.
+(https://caniuse.com/#search=backface-visibility)
 
 Known Bugs:
