@@ -167,6 +167,8 @@ body {
     width: 65%;
     height: 65%;
     transition: transform 100ms ease-in-out;
+    -ms-transition: transform 100ms ease-in-out;
+    -webkit-transition: transform 100ms ease-in-out;
     transform: scale(.9);
     -ms-transform: scale(.9);
     -webkit-transform: scale(.9);
@@ -185,6 +187,8 @@ body {
   width: 20%;
   height: 20%;
   transition: width 100ms ease-in-out, height 100ms ease-in-out;
+  -ms-transition: width 100ms ease-in-out, height 100ms ease-in-out;
+  -webkit-transition: width 100ms ease-in-out, height 100ms ease-in-out;
 }
 
 .card-face:hover .vines {
@@ -222,6 +226,8 @@ body {
     width: 80%;
     height: 80%;
     transition: transform 100ms ease-in-out;
+    -ms-transition: transform 100ms ease-in-out;
+    -webkit-transition: transform 100ms ease-in-out;
     transform: scale(.9);
     -ms-transform: scale(.9);
     -webkit-transform: scale(.9);
