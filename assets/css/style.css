@@ -168,10 +168,14 @@ body {
     height: 65%;
     transition: transform 100ms ease-in-out;
     transform: scale(.9);
+    -ms-transform: scale(.9);
+    -webkit-transform: scale(.9);
 }
 
 .card-front:hover .card-value {
     transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
 }
 
 /*-------------Cards Corners-------------*/
@@ -219,10 +223,14 @@ body {
     height: 80%;
     transition: transform 100ms ease-in-out;
     transform: scale(.9);
+    -ms-transform: scale(.9);
+    -webkit-transform: scale(.9);
 }
 
 .card-back:hover .grass{
     transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
 }
 
 /*-------------Media Queries-------------*/
