@@ -32,13 +32,13 @@ body {
   font-family: BubblegumSans, serif;
   font-weight: normal;
   text-align: center;
-  font-size: 4em;
+  font-size: 3em;
 }
 
 .game-info {
   font-family: BubblegumSans, serif;
   color: #EC9F05;
-  font-size: 2em;
+  font-size: 1.25em;
 }
 
 .game-info-container {
@@ -57,6 +57,7 @@ body {
     right: 0;
     bottom: 0;
     justify-content: center;
+    text-align: center;
     align-items: center;
     z-index: 100;
     color: #EC9F05;
