@@ -46,7 +46,8 @@ class AnimalRoundup {
         this.totalTime = totalTime;
         this.timeRemaining = totalTime;
         this.timer = document.getElementById('time-remaining');
-        this.ticker = document.getElementById('flips');
+        this.ticker = document.getElementById("flips");
+        this.score = document.getElementById("score");
         this.audioController = new AudioController();
     }
 
@@ -55,6 +56,7 @@ class AnimalRoundup {
     startGame() {
         this.cardToCheck = null;
         this.totalClicks = 0;
+        this.totalScore = 0;
         this.timeRemaining = this.totalTime;
         this.matchedCards = [];
         this.busy = true;
@@ -68,6 +70,7 @@ class AnimalRoundup {
         this.hideCards();
         this.timer.innerText = this.timeRemaining;
         this.ticker.innerText = this.totalClicks;
+        this.score.innerText = this.totalScore;
     }
 
     startCountdown() {
@@ -105,6 +108,8 @@ class AnimalRoundup {
             this.audioController.flip();
             this.totalClicks++;
             this.ticker.innerText = this.totalClicks;
+            this.totalScore++;
+            this.score.innerText = this.totalScore;
             card.classList.add('visible');
 
            if(this.cardToCheck)
