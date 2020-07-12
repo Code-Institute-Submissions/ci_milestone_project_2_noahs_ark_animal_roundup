@@ -100,8 +100,8 @@ body {
 .card {
   position: relative;
   display: inline-block;
-  height: 125px;
-  width: 175px;
+  height: 130px;
+  width: 105px;
 }
 
 .card-face {
@@ -164,8 +164,8 @@ body {
 
 .card-value {
     position: absolute;
-    width: 75%;
-    height: 75%;
+    width: 65%;
+    height: 65%;
     transition: transform 100ms ease-in-out;
     transform: scale(.9);
 }
@@ -178,14 +178,14 @@ body {
 
 .vines {
   position: absolute;
-  width: 25px;
-  height: 25px;
+  width: 20%;
+  height: 20%;
   transition: width 100ms ease-in-out, height 100ms ease-in-out;
 }
 
 .card-face:hover .vines {
-  width: 30px;
-  height: 30px;
+  width: 22%;
+  height: 22%;
 }
 
 .vines-top-left {
@@ -214,14 +214,15 @@ body {
 /*-------------Card Back Main Image-------------*/
 
 .grass {
-    max-width: 80%;
-    height:auto;
-    transform: translateY(-10px);
+    position: absolute;
+    width: 80%;
+    height: 80%;
     transition: transform 100ms ease-in-out;
+    transform: scale(.9);
 }
 
-.card-back:hover .grass {
-  max-width: 100%;
+.card-back:hover .grass{
+    transform: scale(1);
 }
 
 /*-------------Media Queries-------------*/

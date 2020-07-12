@@ -63,4 +63,8 @@ Coolors.co for use of their color pallete generator.
 Css-tricks.com for the list of media query sizes.
 (https://css-tricks.com/snippets/css/media-queries-for-standard-devices/)
 
+Pixlr.com for their fantastic image edittor that allows you to keep it's transperancy.
+(https://pixlr.com/x/)
+
+
 Known Bugs:
