@@ -233,8 +233,14 @@ body {
   and (max-device-width: 1024px) 
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 1) {
+    
+    .card {
+        height: 170px;
+        width: 115px;
+    }
+    
     .overlay-text-small { 
-        font-size: 1em;
+        font-size: 2em;
     }
 
     .overlay-text.visible {
@@ -285,14 +291,6 @@ body {
 
 /*----------600px Point----------*/
 @media (max-width: 600px) {
-    .game-container {
-        grid-template-columns: repeat(2, auto);
-    }
-
-    .game-info-container {
-        flex-direction: column;
-        align-items: center;
-    }
 
     .overlay-text { 
         font-size: 1em;
@@ -325,13 +323,10 @@ body {
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
-    .game-container {
-        grid-template-columns: repeat(2, auto);
-    }
 
-    .game-info-container {
-        flex-direction: column;
-        align-items: center;
+    .card {
+        height: 85px;
+        width: 57.5px;
     }
 
     .overlay-text-small { 
@@ -361,13 +356,10 @@ body {
   and (device-width: 360px) 
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 2) {
-    .game-container {
-        grid-template-columns: repeat(2, auto);
-    }
 
-    .game-info-container {
-        flex-direction: column;
-        align-items: center;
+    .card {
+        height: 85px;
+        width: 57.5px;
     }
 
     .overlay-text-small { 
