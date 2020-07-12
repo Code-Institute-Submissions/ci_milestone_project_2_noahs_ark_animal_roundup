@@ -69,4 +69,7 @@ Pixlr.com for their fantastic image edittor that allows you to keep it's transpe
 CanIUse.com for clarifiation about the backface use for IOS devices.
 (https://caniuse.com/#search=backface-visibility)
 
+AutoPrefixer for tidying up the order of my web prefixes.
+(https://autoprefixer.github.io/)
+
 Known Bugs:
