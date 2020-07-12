@@ -33,6 +33,7 @@ body {
   font-weight: normal;
   text-align: center;
   font-size: 3em;
+  margin: 0;
 }
 
 .game-info {
@@ -91,7 +92,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, auto);
   grid-gap: 10px;
-  margin: 50px;
+  margin: 5px;
   justify-content: center;
   perspective: 500px;
 }
@@ -99,8 +100,8 @@ body {
 .card {
   position: relative;
   display: inline-block;
-  height: 175px;
-  width: 125px;
+  height: 125px;
+  width: 175px;
 }
 
 .card-face {
@@ -163,15 +164,14 @@ body {
 
 .card-value {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 75%;
+    height: 75%;
     transition: transform 100ms ease-in-out;
     transform: scale(.9);
 }
 
 .card-front:hover .card-value {
     transform: scale(1);
-
 }
 
 /*-------------Cards Corners-------------*/
@@ -214,14 +214,14 @@ body {
 /*-------------Card Back Main Image-------------*/
 
 .grass {
-    max-width:100%;
+    max-width: 80%;
     height:auto;
     transform: translateY(-10px);
     transition: transform 100ms ease-in-out;
 }
 
 .card-back:hover .grass {
-  max-width:115%;
+  max-width: 100%;
 }
 
 /*-------------Media Queries-------------*/
