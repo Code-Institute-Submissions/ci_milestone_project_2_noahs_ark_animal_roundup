@@ -164,7 +164,6 @@ body {
   -webkit-transition: -webkit-transform 500ms ease-in-out;
   transition: -webkit-transform 500ms ease-in-out;
   -o-transition: transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out;
   transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 
@@ -230,10 +229,8 @@ body {
     width: 65%;
     height: 65%;
     -webkit-transition: -webkit-transform 100ms ease-in-out;
-    transition: -webkit-transform 100ms ease-in-out;
     -o-transition: transform 100ms ease-in-out;
     transition: transform 100ms ease-in-out;
-    transition: transform 100ms ease-in-out, -webkit-transform 100ms ease-in-out;
     -webkit-transform: scale(.9);
         -ms-transform: scale(.9);
             transform: scale(.9);
@@ -297,10 +294,8 @@ body {
     width: 80%;
     height: 80%;
     -webkit-transition: -webkit-transform 100ms ease-in-out;
-    transition: -webkit-transform 100ms ease-in-out;
     -o-transition: transform 100ms ease-in-out;
     transition: transform 100ms ease-in-out;
-    transition: transform 100ms ease-in-out, -webkit-transform 100ms ease-in-out;
     -webkit-transform: scale(.9);
         -ms-transform: scale(.9);
             transform: scale(.9);
