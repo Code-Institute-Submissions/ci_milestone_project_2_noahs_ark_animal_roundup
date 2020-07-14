@@ -85,4 +85,9 @@ Volume On(https://fontawesome.com/v4.7.0/icon/volume-up)
 Lovepik.com for their tropical rain forest image.
 (https://lovepik.com/image-500648859/tropical-rain-forest-in-bohol-island-philippines.html)
 
+ReduceImages.com so I could lower the resolution of background image for faster loading speeds. 
+(https://www.reduceimages.com/)
+
+
+
 Known Bugs:

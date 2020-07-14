@@ -183,6 +183,7 @@ function ready() {
     let sfxToggle = document.getElementById('sfxToggle');
     let musicIcon = document.getElementById('music-icon');
     let sfxIcon = document.getElementById('sfx-icon');
+    let resetBtn = document.getElementById('resetButton');
 
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
@@ -196,14 +197,20 @@ function ready() {
         });
     });
 
+    //----------Reset Button----------
+    resetBtn.addEventListener('click', () => {
+        game.startGame();
+    });
+
+    //----------Music Toggle----------
     musicToggle.addEventListener('click', () => {
         musicIcon.classList.toggle("fa-volume-up");
         musicIcon.classList.toggle("fa-volume-off");
-
     });
+
+    //----------SFX Toggle----------
     sfxToggle.addEventListener('click', () => {
         sfxIcon.classList.toggle("fa-volume-up");
         sfxIcon.classList.toggle("fa-volume-off");
-
     });
 }
