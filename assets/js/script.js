@@ -2,7 +2,7 @@
 
 class AudioController {
     constructor() {
-        this.bgMusic = new Audio("assets/audio/punch-deck-100-seconds.mp3");
+        this.bgMusic = new Audio("assets/audio/roa-music-remember.mp3");
         this.flipSound = new Audio("assets/audio/hitting-bushes-branches-g.mp3");
         this.matchSound = new Audio("assets/audio/match.wav");
         this.victorySound = new Audio("assets/audio/vlad-gluschenko-boat.mp3");
@@ -65,7 +65,7 @@ class AnimalRoundup {
             this.shuffleCards();
             this.countdown = this.startCountdown();
             this.busy = false;
-        }, 500);
+        }, 100);
         this.hideCards();
         this.timer.innerText = this.timeRemaining;
         this.ticker.innerText = this.totalClicks;
@@ -118,6 +118,7 @@ class AnimalRoundup {
         }
     }
 
+    //----------Check to see if cards match----------
     checkForCardMatch(card) {
         if(this.getCardType(card) === this.getCardType(this.cardToCheck))
             this.cardMatch(card, this.cardToCheck);
@@ -127,6 +128,7 @@ class AnimalRoundup {
         this.cardToCheck = null;
     }
 
+    //----------Cards are a match----------
     cardMatch(card1, card2) {
         this.matchedCards.push(card1);
         this.matchedCards.push(card2);
@@ -137,6 +139,7 @@ class AnimalRoundup {
             this.victory();
     }
 
+    //----------Cards are not a match----------
      cardMisMatch(card1, card2) {
         this.busy = true;
         setTimeout(() => {
@@ -146,10 +149,12 @@ class AnimalRoundup {
         }, 1000);
     }
 
+    //----------Check to see the card type----------
     getCardType(card) {
         return card.getElementsByClassName('card-value')[0].src;
     }
 
+    //----------Check to see if cards are allowed to flip----------
     canFlipCard(card) {
         return (!this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck);
     }
@@ -179,18 +184,23 @@ function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
     let game = new AnimalRoundup(100, cards);
+    let audioController = new AudioController();
     let musicToggle = document.getElementById('musicToggle');
     let sfxToggle = document.getElementById('sfxToggle');
     let musicIcon = document.getElementById('music-icon');
     let sfxIcon = document.getElementById('sfx-icon');
     let resetBtn = document.getElementById('resetButton');
 
+
+    //----------Overlay Start over on click----------
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
             overlay.classList.remove('visible');
             game.startGame();
         });
     });
+
+    //----------Flip cards over on click----------
     cards.forEach(card => {
         card.addEventListener('click', () => {
             game.flipCard(card);
@@ -199,13 +209,14 @@ function ready() {
 
     //----------Reset Button----------
     resetBtn.addEventListener('click', () => {
-        game.startGame();
+        game.gameOver();
     });
 
     //----------Music Toggle----------
     musicToggle.addEventListener('click', () => {
         musicIcon.classList.toggle("fa-volume-up");
         musicIcon.classList.toggle("fa-volume-off");
+        audioController.stopMusic();
     });
 
     //----------SFX Toggle----------

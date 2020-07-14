@@ -22,9 +22,9 @@ Why does JSHint throw a warning if I am using const?(https://stackoverflow.com/q
 Martin Berube via IronArchive for the adorable animal icons.
 Iconset: Animal Icons by Martin Berube (46 icons)(https://iconarchive.com/show/animal-icons-by-martin-berube.html)
 
-Punch Deck via free-stock-music.com for the excellent, dramatic & suspenseful cinematic track.
-100 Seconds(https://www.free-stock-music.com/punch-deck-100-seconds.html)
-100 Seconds by Punch Deck | https://soundcloud.com/punch-deck
+Roa Music via free-stock-music.com for the wonderful and positive electronic track.
+Remember(https://www.free-stock-music.com/roa-music-remember.html)
+Remember by Roa Music | https://soundcloud.com/roa_music1031
 Music promoted by https://www.free-stock-music.com
 Creative Commons Attribution 3.0 Unported License
 https://creativecommons.org/licenses/by/3.0/deed.en_US
@@ -78,9 +78,10 @@ CanIUse.com for clarifiation about the backface use for IOS devices.
 AutoPrefixer for tidying up the order of my web prefixes.
 (https://autoprefixer.github.io/)
 
-Font Awesome for access to their volume icons.
+Font Awesome for access to their volume and power icons.
 Volume Off(https://fontawesome.com/v4.7.0/icon/volume-off)
 Volume On(https://fontawesome.com/v4.7.0/icon/volume-up)
+Power Off (https://fontawesome.com/v4.7.0/icon/power-off)
 
 Lovepik.com for their tropical rain forest image.
 (https://lovepik.com/image-500648859/tropical-rain-forest-in-bohol-island-philippines.html)
