@@ -11,9 +11,6 @@
     <!-----------------------Font Awesome Link----------------------->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-	<!-----------------------JS Script----------------------->
-    <script src="assets/js/script.js" async></script>
-
 	<!-----------------------Style Sheet----------------------->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
@@ -60,12 +57,12 @@
 			<!-----------------------Music Toggle----------------------->
 			<div class="game-info">
 				Music:
-				<i class="fa fa-volume-up" aria-hidden="true"></i>
+				<i  id="musicToggle" class="fa fa-volume-up" aria-hidden="true"></i>
 			</div>
 			<!-----------------------SFX Toggle----------------------->
 			<div class="game-info">
 				SFX:
-				<i class="fa fa-volume-up" aria-hidden="true"></i>
+				<i id="sfxToggle" class="fa fa-volume-up" aria-hidden="true"></i>
 			</div>
 			<!-----------------------Flips Counter----------------------->
 			<div class="game-info">
@@ -363,5 +360,11 @@
             </div>
         </div>
     </div>
+	<!-----------------------jQuery Link----------------------->
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+		crossorigin="anonymous"></script>
+	
+	<!-----------------------JS Script----------------------->
+	<script src="assets/js/script.js" async></script>
 </body>
 </html>

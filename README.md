@@ -51,7 +51,7 @@ Vines free icon (https://www.flaticon.com/free-icon/vines_3195853?term=vines&pag
 Ginifab for their excellent color picker app so I could get the HEX from images.
 (https://www.ginifab.com/feeds/pms/color_picker_from_image.php).
 
-bouderbabari via rw-designer.com for great staff cursor icon.
+bouderbabari via rw-designer.com for the great staff cursor icon.
 Ekos Jesus Stick Icon Details(http://www.rw-designer.com/icon-detail/4492)
 
 GoogleFonts for the BubblegumSans font.
@@ -65,6 +65,9 @@ Css-tricks.com for the list of media query sizes.
 
 Css-tricks.com for the simply explanation of helping text pop out over images.
 (https://css-tricks.com/design-considerations-text-images/)
+
+Css-tricks.com for the lesson in colour stroking.
+(https://css-tricks.com/adding-stroke-to-web-text/)
 
 Pixlr.com for their fantastic image edittor that allows you to keep it's transperancy.
 (https://pixlr.com/x/)

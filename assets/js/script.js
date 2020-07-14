@@ -179,6 +179,8 @@ function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
     let game = new AnimalRoundup(100, cards);
+    let musicToggle = document.getElementById('musicToggle');
+    let sfxToggle = document.getElementById('sfxToggle');
 
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
