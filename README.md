@@ -63,6 +63,9 @@ Coolors.co for use of their color pallete generator.
 Css-tricks.com for the list of media query sizes.
 (https://css-tricks.com/snippets/css/media-queries-for-standard-devices/)
 
+Css-tricks.com for the simply explanation of helping text pop out over images.
+(https://css-tricks.com/design-considerations-text-images/)
+
 Pixlr.com for their fantastic image edittor that allows you to keep it's transperancy.
 (https://pixlr.com/x/)
 
@@ -75,5 +78,8 @@ AutoPrefixer for tidying up the order of my web prefixes.
 Font Awesome for access to their volume icons.
 Volume Off(https://fontawesome.com/v4.7.0/icon/volume-off)
 Volume On(https://fontawesome.com/v4.7.0/icon/volume-up)
+
+Lovepik.com for their tropical rain forest image.
+(https://lovepik.com/image-500648859/tropical-rain-forest-in-bohol-island-philippines.html)
 
 Known Bugs:

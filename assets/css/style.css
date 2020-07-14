@@ -20,23 +20,23 @@ html {
 
 body {
   margin: 0;
-  background: -o-radial-gradient(
-      top right,
-      circle,
-      #18206F,
-      #2F52E0
-    );
-  background: radial-gradient(
-      circle at top right,
-      #18206F,
-      #2F52E0
-    );
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url("../images/tropical-rain-forest.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /*-------------Page Title-------------*/
 
 .page-title {
-  color: #EC9F05;
+  color: black;
+  -webkit-text-fill-color: #EC9F05;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
   font-family: BubblegumSans, serif;
   font-weight: normal;
   text-align: center;
@@ -48,7 +48,10 @@ body {
 
 .game-info {
   font-family: BubblegumSans, serif;
-  color: #EC9F05;
+  color: black;
+  -webkit-text-fill-color: #EC9F05;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
   font-size: 1.25em;
 }
 
@@ -83,7 +86,10 @@ body {
         -ms-flex-align: center;
             align-items: center;
     z-index: 100;
-    color: #EC9F05;
+    color: black;
+    -webkit-text-fill-color: #EC9F05;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
     font-family: BubblegumSans, serif;
 }
 
@@ -219,12 +225,12 @@ body {
 }
 
 .card-back {
-  background-color: #3c4f27;
+  background-color: #364f09;
   border-color: black;
 }
 
 .card-front {
-  background-color: #8cc152;
+  background-color: #789b49;
   border-color: black;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
