@@ -181,6 +181,8 @@ function ready() {
     let game = new AnimalRoundup(100, cards);
     let musicToggle = document.getElementById('musicToggle');
     let sfxToggle = document.getElementById('sfxToggle');
+    let musicIcon = document.getElementById('music-icon');
+    let sfxIcon = document.getElementById('sfx-icon');
 
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
@@ -192,5 +194,16 @@ function ready() {
         card.addEventListener('click', () => {
             game.flipCard(card);
         });
+    });
+
+    musicToggle.addEventListener('click', () => {
+        musicIcon.classList.toggle("fa-volume-up");
+        musicIcon.classList.toggle("fa-volume-off");
+
+    });
+    sfxToggle.addEventListener('click', () => {
+        sfxIcon.classList.toggle("fa-volume-up");
+        sfxIcon.classList.toggle("fa-volume-off");
+
     });
 }

@@ -50,20 +50,22 @@
 
 		<!---------------------------------Game Info Headers--------------------------------->
         <div class="game-info-container">
+
             <!-----------------------Time Remaining Counter----------------------->
             <div class="game-info">
                 Time <span id="time-remaining">100</span>
             </div>
+
 			<!-----------------------Music Toggle----------------------->
-			<div class="game-info">
-				Music:
-				<i  id="musicToggle" class="fa fa-volume-up" aria-hidden="true"></i>
+			<div id="musicToggle" class="game-info music-playing">
+				<div>Music <i id="music-icon" class="fa fa-volume-up" aria-hidden="true"></i></div>
 			</div>
+			
 			<!-----------------------SFX Toggle----------------------->
-			<div class="game-info">
-				SFX:
-				<i id="sfxToggle" class="fa fa-volume-up" aria-hidden="true"></i>
+			<div id="sfxToggle" class="game-info sfx-playing">
+				<div>SFX <i id="sfx-icon" class="fa fa-volume-up" aria-hidden="true"></i></div>
 			</div>
+
 			<!-----------------------Flips Counter----------------------->
 			<div class="game-info">
 				Flips <span id="flips">0</span>
