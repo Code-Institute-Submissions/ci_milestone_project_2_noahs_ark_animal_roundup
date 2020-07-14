@@ -8,6 +8,9 @@
 	<meta name="keywords" content="Memory game, memory, card game, game, animals, animal game, kids, kids game">
 	<meta name="author" content="Donal O'Farrell">
 
+    <!-----------------------Font Awesome Link----------------------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
 	<!-----------------------JS Script----------------------->
     <script src="assets/js/script.js" async></script>
 
@@ -50,9 +53,15 @@
 
 		<!---------------------------------Game Info Headers--------------------------------->
         <div class="game-info-container">
+            <!-----------------------Time Remaining Counter----------------------->
             <div class="game-info">
                 Time <span id="time-remaining">100</span>
             </div>
+			<div class="game-info">
+				Sound:
+				<i class="fa fa-volume-off" aria-hidden="true"></i>
+			</div>
+			<!-----------------------Flips Counter----------------------->
 			<div class="game-info">
 				Flips <span id="flips">0</span>
 			</div>

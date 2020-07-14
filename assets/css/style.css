@@ -33,7 +33,7 @@ body {
     );
 }
 
-/*-------------Game Info Headers-------------*/
+/*-------------Page Title-------------*/
 
 .page-title {
   color: #EC9F05;
@@ -43,6 +43,8 @@ body {
   font-size: 3em;
   margin: 0;
 }
+
+/*-------------Game Info Headers-------------*/
 
 .game-info {
   font-family: BubblegumSans, serif;
@@ -59,6 +61,10 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+/*-------------Mute Button-------------*/
+
+
 
 /*-------------Overlay Text-------------*/
 
