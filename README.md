@@ -72,4 +72,8 @@ CanIUse.com for clarifiation about the backface use for IOS devices.
 AutoPrefixer for tidying up the order of my web prefixes.
 (https://autoprefixer.github.io/)
 
+Font Awesome for access to their volume icons.
+Volume Off(https://fontawesome.com/v4.7.0/icon/volume-off)
+Volume On(https://fontawesome.com/v4.7.0/icon/volume-up)
+
 Known Bugs:
