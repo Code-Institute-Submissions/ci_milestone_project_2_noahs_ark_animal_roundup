@@ -149,28 +149,34 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-animation: overlay-grow 500ms forwards;
-            animation: overlay-grow 500ms forwards;
+    -webkit-animation: water-rise 5000ms forwards;
+            animation: water-rise 5000ms forwards;
 }
 
-@-webkit-keyframes overlay-grow {
+@-webkit-keyframes water-rise {
     from {
         background-color: rgba(0, 0, 0, 0);
         font-size: 0;
     }
     to {
-        background-color: rgba(0, 0, 0, 0.9);
+        background: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+            ), url("../images/stormy-sea.jpg") no-repeat center center fixed; 
         font-size: 3em;
     }
 }
 
-@keyframes overlay-grow {
+@keyframes water-rise {
     from {
         background-color: rgba(0, 0, 0, 0);
         font-size: 0;
     }
     to {
-        background-color: rgba(0, 0, 0, 0.9);
+        background: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+            ), url("../images/stormy-sea.jpg") no-repeat center center fixed; 
         font-size: 3em;
     }
 }
@@ -400,7 +406,7 @@ body {
         }
         to {
             background-color: rgba(0, 0, 0, 0.9);
-            font-size: 2em;
+            font-size: 3em;
         }
     }
 
@@ -411,11 +417,49 @@ body {
         }
         to {
             background-color: rgba(0, 0, 0, 0.9);
+            font-size: 3em;
+        }
+    }
+
+    .overlay-text.flood.visible {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-animation: water-rise 5000ms forwards;
+                animation: water-rise 5000ms forwards;
+    }
+
+    @-webkit-keyframes water-rise {
+        from {
+            background-color: rgba(0, 0, 0, 0);
+            font-size: 0;
+        }
+        to {
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+                ), url("../images/stormy-sea.jpg") no-repeat center center fixed; 
             font-size: 2em;
         }
     }
-}
-
+    @keyframes water-rise {
+        from {
+            background-color: rgba(0, 0, 0, 0);
+            font-size: 0;
+        }
+        to {
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+                ), url("../images/stormy-sea.jpg") no-repeat center center fixed; 
+            font-size: 2em;
+        }
+    }
+  }
 /*----------800px Point----------*/
 @media (max-width: 800px) {
     .overlay-text { 
@@ -459,8 +503,47 @@ body {
             font-size: 1.5em;
         }
     }
-}
 
+    .overlay-text.flood.visible {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-animation: water-rise 5000ms forwards;
+                animation: water-rise 5000ms forwards;
+    }
+
+    @-webkit-keyframes water-rise {
+        from {
+            background-color: rgba(0, 0, 0, 0);
+            font-size: 0;
+        }
+        to {
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+                ), url("../images/stormy-sea.jpg") no-repeat center center fixed; 
+            font-size: 1.5em;
+        }
+    }
+
+    @keyframes water-rise {
+        from {
+            background-color: rgba(0, 0, 0, 0);
+            font-size: 0;
+        }
+        to {
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+                ), url("../images/stormy-sea.jpg") no-repeat center center fixed; 
+            font-size: 1.5em;
+        }
+    }
+}
 /*----------600px Point----------*/
 @media (max-width: 600px) {
 
@@ -505,8 +588,46 @@ body {
             font-size: 1.5em;
         }
     }
-}
+    .overlay-text.flood.visible {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-animation: water-rise 5000ms forwards;
+                animation: water-rise 5000ms forwards;
+    }
 
+    @-webkit-keyframes water-rise {
+        from {
+            background-color: rgba(0, 0, 0, 0);
+            font-size: 0;
+        }
+        to {
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+                ), url("../images/stormy-sea.jpg") no-repeat center center fixed; 
+            font-size: 1.5em;
+        }
+    }
+
+    @keyframes water-rise {
+        from {
+            background-color: rgba(0, 0, 0, 0);
+            font-size: 0;
+        }
+        to {
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+                ), url("../images/stormy-sea.jpg") no-repeat center center fixed; 
+            font-size: 1.5em;
+        }
+    }
+}
 /*----------iPhone 6----------*/
 @media only screen 
   and (min-device-width: 320px) 
@@ -555,8 +676,46 @@ body {
             font-size: 1.5em;
         }
     }
-}
+    .overlay-text.flood.visible {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-animation: water-rise 5000ms forwards;
+                animation: water-rise 5000ms forwards;
+    }
 
+    @-webkit-keyframes water-rise {
+        from {
+            background-color: rgba(0, 0, 0, 0);
+            font-size: 0;
+        }
+        to {
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+                ), url("../images/stormy-sea.jpg") no-repeat center center fixed; 
+            font-size: 1.5em;
+        }
+    }
+
+    @keyframes water-rise {
+        from {
+            background-color: rgba(0, 0, 0, 0);
+            font-size: 0;
+        }
+        to {
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+                ), url("../images/stormy-sea.jpg") no-repeat center center fixed; 
+            font-size: 1.5em;
+        }
+    }
+}
 /*----------Galaxy S5----------*/
 @media screen 
   and (device-width: 360px) 
@@ -602,6 +761,45 @@ body {
         }
         to {
             background-color: rgba(0, 0, 0, 0.9);
+            font-size: 1.5em;
+        }
+    }
+    .overlay-text.flood.visible {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-animation: water-rise 5000ms forwards;
+                animation: water-rise 5000ms forwards;
+    }
+
+    @-webkit-keyframes water-rise {
+        from {
+            background-color: rgba(0, 0, 0, 0);
+            font-size: 0;
+        }
+        to {
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+                ), url("../images/stormy-sea.jpg") no-repeat center center fixed; 
+            font-size: 1.5em;
+        }
+    }
+
+    @keyframes water-rise {
+        from {
+            background-color: rgba(0, 0, 0, 0);
+            font-size: 0;
+        }
+        to {
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+                ), url("../images/stormy-sea.jpg") no-repeat center center fixed; 
             font-size: 1.5em;
         }
     }
