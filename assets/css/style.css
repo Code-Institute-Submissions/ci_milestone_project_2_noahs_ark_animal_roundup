@@ -337,12 +337,12 @@ body {
   and (-webkit-min-device-pixel-ratio: 1) {
     
     .card {
-        height: 170px;
-        width: 115px;
+        height: 200px;
+        width: 130px;
     }
     
     .overlay-text-small { 
-        font-size: 2em;
+        font-size: 4em;
     }
 
     .overlay-text.visible {
@@ -478,8 +478,8 @@ body {
   and (-webkit-min-device-pixel-ratio: 2) {
 
     .card {
-        height: 85px;
-        width: 57.5px;
+        height: 100px;
+        width: 75px;
     }
 
     .overlay-text-small { 
@@ -528,8 +528,8 @@ body {
   and (-webkit-device-pixel-ratio: 2) {
 
     .card {
-        height: 85px;
-        width: 57.5px;
+        height: 100px;
+        width: 75px;
     }
 
     .overlay-text-small { 
