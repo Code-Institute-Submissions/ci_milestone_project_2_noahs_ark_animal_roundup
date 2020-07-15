@@ -86,6 +86,9 @@ Power Off (https://fontawesome.com/v4.7.0/icon/power-off)
 Lovepik.com for their tropical rain forest image.
 (https://lovepik.com/image-500648859/tropical-rain-forest-in-bohol-island-philippines.html)
 
+prettysleepy1 via Pixabay for the stormy sea image.
+(https://pixabay.com/photos/seascape-clouds-storm-horizon-hope-4240264/)
+
 ReduceImages.com so I could lower the resolution of background image for faster loading speeds. 
 (https://www.reduceimages.com/)
 

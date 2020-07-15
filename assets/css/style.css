@@ -635,8 +635,8 @@ body {
   and (-webkit-min-device-pixel-ratio: 2) {
 
     .card {
-        height: 100px;
-        width: 75px;
+        height: 92.5px;
+        width: 72.5px;
     }
 
     .overlay-text-small { 
