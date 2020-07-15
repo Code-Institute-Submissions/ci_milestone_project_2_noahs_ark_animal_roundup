@@ -15,6 +15,7 @@ class AudioController {
         this.victorySound.loop = true;
         this.gameOverSound.volume = 0.2;
         this.gameOverSound.loop = true;
+        this.musicOn = true;
     }
     startMusic() {
         this.bgMusic.play();
@@ -26,6 +27,16 @@ class AudioController {
         this.victorySound.currentTime = 0;
         this.gameOverSound.pause();
         this.gameOverSound.currentTime = 0;
+    }
+    musicToggle() {
+        if (this.musicOn == true) {
+            this.stopMusic();
+            this.musicOn = false;
+        }
+        else {
+            this.startMusic();
+            this.musicOn = true;
+        }
     }
     flip() {
         this.flipSound.play();
@@ -59,6 +70,8 @@ class AnimalRoundup {
     //----------Overlays----------
 
     startGame() {
+        if (this.countdown !== undefined)
+            clearInterval(this.countdown);
         this.cardToCheck = null;
         this.totalClicks = 0;
         this.totalScore = 0;
@@ -214,13 +227,14 @@ function ready() {
 
     //----------Reset Button----------
     resetBtn.addEventListener('click', () => {
-        game.gameOver();
+        game.startGame();
     });
 
     //----------Music Toggle----------
     musicToggle.addEventListener('click', () => {
         musicIcon.classList.toggle("fa-volume-up");
         musicIcon.classList.toggle("fa-volume-off");
+        game.audioController.musicToggle()
     });
 
     //----------SFX Toggle----------

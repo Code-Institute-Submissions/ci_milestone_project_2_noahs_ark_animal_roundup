@@ -139,6 +139,42 @@ body {
     }
 }
 
+/*-------------Game Over Overlay-------------*/
+
+.overlay-text.flood.visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-animation: overlay-grow 500ms forwards;
+            animation: overlay-grow 500ms forwards;
+}
+
+@-webkit-keyframes overlay-grow {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 0;
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0.9);
+        font-size: 3em;
+    }
+}
+
+@keyframes overlay-grow {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 0;
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0.9);
+        font-size: 3em;
+    }
+}
+
 /*-------------Cards-------------*/
 
 .game-container {
