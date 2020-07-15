@@ -66,11 +66,15 @@ class AudioController {
     }
     victory() {
         this.stopMusic();
-        this.victorySound.play();
+        if (this.musicOn == true) {
+            this.victorySound.play();
+        }
     }
     gameOver() {
         this.stopMusic();
-        this.gameOverSound.play();
+        if (this.musicOn == true) {
+            this.gameOverSound.play();
+        }
     }
 }
 
