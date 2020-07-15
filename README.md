@@ -89,6 +89,8 @@ Lovepik.com for their tropical rain forest image.
 ReduceImages.com so I could lower the resolution of background image for faster loading speeds. 
 (https://www.reduceimages.com/)
 
+Anthony Ngene as my project mentor and for his help in the reset button and music toggle button.
+(https://github.com/tonymontaro)
 
 
 Known Bugs:

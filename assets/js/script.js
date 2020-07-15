@@ -16,6 +16,7 @@ class AudioController {
         this.gameOverSound.volume = 0.2;
         this.gameOverSound.loop = true;
         this.musicOn = true;
+        this.sfxOn = true;
     }
     startMusic() {
         this.bgMusic.play();
@@ -28,6 +29,12 @@ class AudioController {
         this.gameOverSound.pause();
         this.gameOverSound.currentTime = 0;
     }
+    stopSfx() {
+        this.flipSound.pause();
+        this.flipSound.currentTime = 0;
+        this.matchSound.pause();
+        this.matchSound.currentTime = 0;
+    }
     musicToggle() {
         if (this.musicOn == true) {
             this.stopMusic();
@@ -38,11 +45,24 @@ class AudioController {
             this.musicOn = true;
         }
     }
+    sfxToggle() {
+        if (this.sfxOn == true) {
+            this.stopSfx();
+            this.sfxOn = false;
+        }
+        else {
+            this.sfxOn = true;
+        }
+    }
     flip() {
-        this.flipSound.play();
+        if (this.sfxOn == true) {
+            this.flipSound.play();
+        }
     }
     match() {
-        this.matchSound.play();
+        if (this.sfxOn == true) {
+            this.matchSound.play();
+        }
     }
     victory() {
         this.stopMusic();
@@ -84,7 +104,7 @@ class AnimalRoundup {
             this.shuffleCards();
             this.countdown = this.startCountdown();
             this.busy = false;
-        }, 100);
+        }, 300);
         this.hideCards();
         this.timer.innerText = this.timeRemaining;
         this.ticker.innerText = this.totalClicks;
@@ -241,5 +261,6 @@ function ready() {
     sfxToggle.addEventListener('click', () => {
         sfxIcon.classList.toggle("fa-volume-up");
         sfxIcon.classList.toggle("fa-volume-off");
+        game.audioController.sfxToggle()
     });
 }
