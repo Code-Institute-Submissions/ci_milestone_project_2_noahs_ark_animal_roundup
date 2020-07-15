@@ -7,8 +7,14 @@ class AudioController {
         this.matchSound = new Audio("assets/audio/match.wav");
         this.victorySound = new Audio("assets/audio/vlad-gluschenko-boat.mp3");
         this.gameOverSound = new Audio("assets/audio/perfect-thunder-storm.mp3");
-        this.bgMusic.volume = 0.5;
+        this.bgMusic.volume = 0.1;
         this.bgMusic.loop = true;
+        this.flipSound.volume = 0.5;
+        this.matchSound.volume = 0.5;
+        this.victorySound.volume = 0.3;
+        this.victorySound.loop = true;
+        this.gameOverSound.volume = 0.2;
+        this.gameOverSound.loop = true;
     }
     startMusic() {
         this.bgMusic.play();
@@ -184,7 +190,6 @@ function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
     let game = new AnimalRoundup(100, cards);
-    let audioController = new AudioController();
     let musicToggle = document.getElementById('musicToggle');
     let sfxToggle = document.getElementById('sfxToggle');
     let musicIcon = document.getElementById('music-icon');
@@ -216,7 +221,6 @@ function ready() {
     musicToggle.addEventListener('click', () => {
         musicIcon.classList.toggle("fa-volume-up");
         musicIcon.classList.toggle("fa-volume-off");
-        audioController.stopMusic();
     });
 
     //----------SFX Toggle----------
