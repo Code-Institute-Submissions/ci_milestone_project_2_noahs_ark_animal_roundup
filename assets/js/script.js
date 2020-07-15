@@ -260,13 +260,13 @@ function ready() {
     musicToggle.addEventListener('click', () => {
         musicIcon.classList.toggle("fa-volume-up");
         musicIcon.classList.toggle("fa-volume-off");
-        game.audioController.musicToggle()
+        game.audioController.musicToggle();
     });
 
     //----------SFX Toggle----------
     sfxToggle.addEventListener('click', () => {
         sfxIcon.classList.toggle("fa-volume-up");
         sfxIcon.classList.toggle("fa-volume-off");
-        game.audioController.sfxToggle()
+        game.audioController.sfxToggle();
     });
 }
