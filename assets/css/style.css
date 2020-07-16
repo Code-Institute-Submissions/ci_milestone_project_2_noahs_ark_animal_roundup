@@ -68,6 +68,7 @@ body {
 /*-------------Footer-------------*/
 
 .footer-container {
+    text-align: center;
   grid-column: 1 / -1;
   grid-row-start: 6; 
   grid-row-end: 7; 
