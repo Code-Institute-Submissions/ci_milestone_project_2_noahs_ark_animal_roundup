@@ -67,7 +67,19 @@ body {
 
 /*-------------Footer-------------*/
 
-a {
+.footer-container {
+  grid-column: 1 / -1;
+  grid-row-start: 6; 
+  grid-row-end: 7; 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-container a {
     text-decoration: none;
     color: black;
     -webkit-text-fill-color: #EC9F05;
@@ -75,7 +87,7 @@ a {
     -webkit-text-stroke-color: black;
 }
 
-a:visited{
+.footer-container a:visited{
     text-decoration: none;
     color: black;
     -webkit-text-fill-color: #EC9F05;
