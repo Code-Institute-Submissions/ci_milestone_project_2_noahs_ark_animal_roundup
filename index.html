@@ -1,401 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
 
-	<!--Meta Data-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Noah's Ark: Animal Roundup. Memory Game for Kids">
-	<meta name="keywords" content="Memory game, memory, card game, game, animals, animal game, kids, kids game, noah ark, noah, ark, bible, bible games, bible kids game">
-	<meta name="author" content="Donal O'Farrell">
+        <!--Meta Data-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Noah's Ark: Animal Roundup. Memory Game for Kids">
+        <meta name="keywords" content="Memory game, memory, card game, game, animals, animal game, kids, kids game, noah ark, noah, ark, bible, bible games, bible kids game">
+        <meta name="author" content="Donal O'Farrell">
 
-	<!--Tab Icon Link-->
-	<link rel="icon" href="assets/images/hippo.ico" type="image/x-icon">
+        <!--Tab Icon Link-->
+        <link rel="icon" href="assets/images/hippo.ico" type="image/x-icon">
 
-    <!--Font Awesome Link-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    
-	<!--Style Sheet-->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <!--Font Awesome Link-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        
+        <!--Style Sheet-->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-	<!--Title-->
-    <title>Noah's Ark: Animal Roundup</title>
-</head>
-<body>
-	<!--Page Title-->
-    <h1 class="page-title">Noah's Ark:<br>Animal Roundup</h1>
+        <!--Title-->
+        <title>Noah's Ark: Animal Roundup</title>
+    </head>
+    <body>
+        <!--Page Title-->
+        <h1 class="page-title">Noah's Ark:<br>Animal Roundup</h1>
 
-	<!--Overlay Texts-->
+        <!--Overlay Texts-->
 
-	<!--Intro Text-->
-    <div class="overlay-text visible">
-        <h1>The Flood is coming!</h1>
-		<p class="overlay-text-small">Help Noah to quickly round up the animals.<br>
-        They are shy so will only come out in pairs.</p>
-		<span class="overlay-text-small">Click to Start</span>
-    </div>
-
-	<!--Game Over Text-->
-	<div id="game-over-text" class="overlay-text flood">
-		<h1>GAME OVER</h1>
-		<p class="overlay-text-small">Oh no! You were too late and the Flood is upon us!</p>
-        <span class="overlay-text-small">Click to try again</span>
-	</div>
-
-	<!--Victory text-->
-	<div id="victory-text" class="overlay-text">
-		<h1>VICTORY</h1>
-		<p class="overlay-text-small">You did it! All animals are safely on the ark.<br>
-		It took you <span id="score">0</span> flips.</p>
-		<span class="overlay-text-small">Click to try again</span>
-	</div>
-    <div class="game-container">
-
-		<!--Game Info Headers-->
-        <div class="game-info-container">
-
-            <!--Time Remaining Counter-->
-            <div class="game-info">
-                Time <span id="time-remaining">100</span>
-            </div>
-
-			<!--Music Toggle-->
-			<div id="musicToggle" class="game-info music-playing">
-				<div>Music <i id="music-icon" class="fa fa-volume-up" aria-hidden="true"></i></div>
-			</div>
-			
-			<!--SFX Toggle-->
-			<div id="sfxToggle" class="game-info sfx-playing">
-				<div>SFX <i id="sfx-icon" class="fa fa-volume-up" aria-hidden="true"></i></div>
-			</div>
-
-			<!--Reset Button-->
-			<div id="resetButton" class="game-info">
-				<div>Reset <i id="reset-icon" class="fa fa-power-off" aria-hidden="true"></i></div>
-			</div>
-
-			<!--Flips Counter-->
-			<div class="game-info">
-				Flips <span id="flips">0</span>
-			</div>
+        <!--Intro Text-->
+        <div class="overlay-text visible">
+            <h1>The Flood is coming!</h1>
+            <p class="overlay-text-small">Help Noah to quickly round up the animals.<br>
+            They are shy so will only come out in pairs.</p>
+            <span class="overlay-text-small">Click to Start</span>
         </div>
 
-		<!--Card Deck-->
-		<div class="game-container">
-		    <!--Card 1-->
-            <div class="card">
-                <div class="card-back card-face">
-                    <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
-                    <img class="grass" src="assets/images/grass.png" alt="grass">
+        <!--Game Over Text-->
+        <div id="game-over-text" class="overlay-text flood">
+            <h1>GAME OVER</h1>
+            <p class="overlay-text-small">Oh no! You were too late and the Flood is upon us!</p>
+            <span class="overlay-text-small">Click to try again</span>
+        </div>
+
+        <!--Victory text-->
+        <div id="victory-text" class="overlay-text">
+            <h1>VICTORY</h1>
+            <p class="overlay-text-small">You did it! All animals are safely on the ark.<br>
+            It took you <span id="score">0</span> flips.</p>
+            <span class="overlay-text-small">Click to try again</span>
+        </div>
+        <div class="game-container">
+
+            <!--Game Info Headers-->
+            <div class="game-info-container">
+
+                <!--Time Remaining Counter-->
+                <div class="game-info">
+                    Time <span id="time-remaining">100</span>
                 </div>
-                <div class="card-front card-face">
-                    <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
-                    <img class="card-value" src="assets/images/hippo.ico" alt="hippo">
+
+                <!--Music Toggle-->
+                <div id="musicToggle" class="game-info music-playing">
+                    <div>Music <i id="music-icon" class="fa fa-volume-up" aria-hidden="true"></i></div>
+                </div>
+                
+                <!--SFX Toggle-->
+                <div id="sfxToggle" class="game-info sfx-playing">
+                    <div>SFX <i id="sfx-icon" class="fa fa-volume-up" aria-hidden="true"></i></div>
+                </div>
+
+                <!--Reset Button-->
+                <div id="resetButton" class="game-info">
+                    <div>Reset <i id="reset-icon" class="fa fa-power-off" aria-hidden="true"></i></div>
+                </div>
+
+                <!--Flips Counter-->
+                <div class="game-info">
+                    Flips <span id="flips">0</span>
                 </div>
             </div>
 
-            <!--Card 2-->
-            <div class="card">
-                <div class="card-back card-face">
-                    <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
-                    <img class="grass" src="assets/images/grass.png" alt="grass">
+            <!--Card Deck-->
+            <div class="game-container">
+                <!--Card 1-->
+                <div class="card">
+                    <div class="card-back card-face">
+                        <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
+                        <img class="grass" src="assets/images/grass.png" alt="grass">
+                    </div>
+                    <div class="card-front card-face">
+                        <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
+                        <img class="card-value" src="assets/images/hippo.ico" alt="hippo">
+                    </div>
                 </div>
-                <div class="card-front card-face">
-                    <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
-                    <img class="card-value" src="assets/images/hippo.ico" alt="hippo">
+
+                <!--Card 2-->
+                <div class="card">
+                    <div class="card-back card-face">
+                        <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
+                        <img class="grass" src="assets/images/grass.png" alt="grass">
+                    </div>
+                    <div class="card-front card-face">
+                        <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
+                        <img class="card-value" src="assets/images/hippo.ico" alt="hippo">
+                    </div>
+                </div>
+
+                <!--Card 3-->
+                <div class="card">
+                    <div class="card-back card-face">
+                        <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
+                        <img class="grass" src="assets/images/grass.png" alt="grass">
+                    </div>
+                    <div class="card-front card-face">
+                        <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
+                        <img class="card-value" src="assets/images/panda.ico" alt="panda">
+                    </div>
+                </div>
+
+                <!--Card 4-->
+                <div class="card">
+                    <div class="card-back card-face">
+                        <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
+                        <img class="grass" src="assets/images/grass.png" alt="grass">
+                    </div>
+                    <div class="card-front card-face">
+                        <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
+                        <img class="card-value" src="assets/images/panda.ico" alt="panda">
+                    </div>
+                </div>
+
+                <!--Card 5-->
+                <div class="card">
+                    <div class="card-back card-face">
+                        <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
+                        <img class="grass" src="assets/images/grass.png" alt="grass">
+                    </div>
+                    <div class="card-front card-face">
+                        <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
+                        <img class="card-value" src="assets/images/monkey.ico" alt="monkey">
+                    </div>
+                </div>
+
+                <!--Card 6-->
+                <div class="card">
+                    <div class="card-back card-face">
+                        <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
+                        <img class="grass" src="assets/images/grass.png" alt="grass">
+                    </div>
+                    <div class="card-front card-face">
+                        <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
+                        <img class="card-value" src="assets/images/monkey.ico" alt="monkey">
+                    </div>
+                </div>
+
+                <!--Card 7-->
+                <div class="card">
+                    <div class="card-back card-face">
+                        <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
+                        <img class="grass" src="assets/images/grass.png" alt="grass">
+                    </div>
+                    <div class="card-front card-face">
+                        <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
+                        <img class="card-value" src="assets/images/bird.ico" alt="bird">
+                    </div>
+                </div>
+
+                <!--Card 8-->
+                <div class="card">
+                    <div class="card-back card-face">
+                        <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
+                        <img class="grass" src="assets/images/grass.png" alt="grass">
+                    </div>
+                    <div class="card-front card-face">
+                        <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
+                        <img class="card-value" src="assets/images/bird.ico" alt="bird">
+                    </div>
+                </div>
+
+                <!--Card 9-->
+                <div class="card">
+                    <div class="card-back card-face">
+                        <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
+                        <img class="grass" src="assets/images/grass.png" alt="grass">
+                    </div>
+                    <div class="card-front card-face">
+                        <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
+                        <img class="card-value" src="assets/images/elephant.ico" alt="elephant">
+                    </div>
+                </div>
+
+                <!--Card 10-->
+                <div class="card">
+                    <div class="card-back card-face">
+                        <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
+                        <img class="grass" src="assets/images/grass.png" alt="grass">
+                    </div>
+                    <div class="card-front card-face">
+                        <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
+                        <img class="card-value" src="assets/images/elephant.ico" alt="elephant">
+                    </div>
+                </div>
+
+                <!--Card 11-->
+                <div class="card">
+                    <div class="card-back card-face">
+                        <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
+                        <img class="grass" src="assets/images/grass.png" alt="grass">
+                    </div>
+                    <div class="card-front card-face">
+                        <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
+                        <img class="card-value" src="assets/images/giraffe.ico" alt="giraffe">
+                    </div>
+                </div>
+
+                <!--Card 12-->
+                <div class="card">
+                    <div class="card-back card-face">
+                        <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
+                        <img class="grass" src="assets/images/grass.png" alt="grass">
+                    </div>
+                    <div class="card-front card-face">
+                        <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
+                        <img class="card-value" src="assets/images/giraffe.ico" alt="giraffe">
+                    </div>
+                </div>
+
+                <!--Card 13-->
+                <div class="card">
+                    <div class="card-back card-face">
+                        <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
+                        <img class="grass" src="assets/images/grass.png" alt="grass">
+                    </div>
+                    <div class="card-front card-face">
+                        <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
+                        <img class="card-value" src="assets/images/snake.ico" alt="snake">
+                    </div>
+                </div>
+
+                <!--Card 14-->
+                <div class="card">
+                    <div class="card-back card-face">
+                        <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
+                        <img class="grass" src="assets/images/grass.png" alt="grass">
+                    </div>
+                    <div class="card-front card-face">
+                        <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
+                        <img class="card-value" src="assets/images/snake.ico" alt="snake">
+                    </div>
+                </div>
+
+                <!--Card 15-->
+                <div class="card">
+                    <div class="card-back card-face">
+                        <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
+                        <img class="grass" src="assets/images/grass.png" alt="grass">
+                    </div>
+                    <div class="card-front card-face">
+                        <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
+                        <img class="card-value" src="assets/images/crocodile.ico" alt="crocodile">
+                    </div>
+                </div>
+
+                <!--Card 16-->
+                <div class="card">
+                    <div class="card-back card-face">
+                        <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
+                        <img class="grass" src="assets/images/grass.png" alt="grass">
+                    </div>
+                    <div class="card-front card-face">
+                        <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
+                        <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
+                        <img class="card-value" src="assets/images/crocodile.ico" alt="crocodile">
+                    </div>
+                </div>
+            </div>    
+
+            <!--Footer-->
+            <div class="game-info-container">
+            
+                <!--Author Name-->
+                <div class="game-info">
+                    Donal O'Farrell
+                </div>
+            
+                <!--Contact Form-->
+                <div class="game-info">
+                    Contact
+                </div>
+
+                <!--Github Link-->
+                <div class="game-info">
+                    <a target="_blank" href="https://github.com/dof-bull">Github</a>
                 </div>
             </div>
+        </div>
 
-            <!--Card 3-->
-            <div class="card">
-                <div class="card-back card-face">
-                    <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
-                    <img class="grass" src="assets/images/grass.png" alt="grass">
-                </div>
-                <div class="card-front card-face">
-                    <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
-                    <img class="card-value" src="assets/images/panda.ico" alt="panda">
-                </div>
-            </div>
-
-            <!--Card 4-->
-            <div class="card">
-                <div class="card-back card-face">
-                    <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
-                    <img class="grass" src="assets/images/grass.png" alt="grass">
-                </div>
-                <div class="card-front card-face">
-                    <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
-                    <img class="card-value" src="assets/images/panda.ico" alt="panda">
-                </div>
-            </div>
-
-            <!--Card 5-->
-            <div class="card">
-                <div class="card-back card-face">
-                    <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
-                    <img class="grass" src="assets/images/grass.png" alt="grass">
-                </div>
-                <div class="card-front card-face">
-                    <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
-                    <img class="card-value" src="assets/images/monkey.ico" alt="monkey">
-                </div>
-            </div>
-
-            <!--Card 6-->
-            <div class="card">
-                <div class="card-back card-face">
-                    <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
-                    <img class="grass" src="assets/images/grass.png" alt="grass">
-                </div>
-                <div class="card-front card-face">
-                    <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
-                    <img class="card-value" src="assets/images/monkey.ico" alt="monkey">
-                </div>
-            </div>
-
-            <!--Card 7-->
-            <div class="card">
-                <div class="card-back card-face">
-                    <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
-                    <img class="grass" src="assets/images/grass.png" alt="grass">
-                </div>
-                <div class="card-front card-face">
-                    <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
-                    <img class="card-value" src="assets/images/bird.ico" alt="bird">
-                </div>
-            </div>
-
-            <!--Card 8-->
-            <div class="card">
-                <div class="card-back card-face">
-                    <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
-                    <img class="grass" src="assets/images/grass.png" alt="grass">
-                </div>
-                <div class="card-front card-face">
-                    <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
-                    <img class="card-value" src="assets/images/bird.ico" alt="bird">
-                </div>
-            </div>
-
-            <!--Card 9-->
-            <div class="card">
-                <div class="card-back card-face">
-                    <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
-                    <img class="grass" src="assets/images/grass.png" alt="grass">
-                </div>
-                <div class="card-front card-face">
-                    <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
-                    <img class="card-value" src="assets/images/elephant.ico" alt="elephant">
-                </div>
-            </div>
-
-            <!--Card 10-->
-            <div class="card">
-                <div class="card-back card-face">
-                    <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
-                    <img class="grass" src="assets/images/grass.png" alt="grass">
-                </div>
-                <div class="card-front card-face">
-                    <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
-                    <img class="card-value" src="assets/images/elephant.ico" alt="elephant">
-                </div>
-            </div>
-
-            <!--Card 11-->
-            <div class="card">
-                <div class="card-back card-face">
-                    <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
-                    <img class="grass" src="assets/images/grass.png" alt="grass">
-                </div>
-                <div class="card-front card-face">
-                    <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
-                    <img class="card-value" src="assets/images/giraffe.ico" alt="giraffe">
-                </div>
-            </div>
-
-            <!--Card 12-->
-            <div class="card">
-                <div class="card-back card-face">
-                    <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
-                    <img class="grass" src="assets/images/grass.png" alt="grass">
-                </div>
-                <div class="card-front card-face">
-                    <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
-                    <img class="card-value" src="assets/images/giraffe.ico" alt="giraffe">
-                </div>
-            </div>
-
-            <!--Card 13-->
-            <div class="card">
-                <div class="card-back card-face">
-                    <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
-                    <img class="grass" src="assets/images/grass.png" alt="grass">
-                </div>
-                <div class="card-front card-face">
-                    <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
-                    <img class="card-value" src="assets/images/snake.ico" alt="snake">
-                </div>
-            </div>
-
-            <!--Card 14-->
-            <div class="card">
-                <div class="card-back card-face">
-                    <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
-                    <img class="grass" src="assets/images/grass.png" alt="grass">
-                </div>
-                <div class="card-front card-face">
-                    <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
-                    <img class="card-value" src="assets/images/snake.ico" alt="snake">
-                </div>
-            </div>
-
-            <!--Card 15-->
-            <div class="card">
-                <div class="card-back card-face">
-                    <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
-                    <img class="grass" src="assets/images/grass.png" alt="grass">
-                </div>
-                <div class="card-front card-face">
-                    <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
-                    <img class="card-value" src="assets/images/crocodile.ico" alt="crocodile">
-                </div>
-            </div>
-
-            <!--Card 16-->
-            <div class="card">
-                <div class="card-back card-face">
-                    <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
-                    <img class="grass" src="assets/images/grass.png" alt="grass">
-                </div>
-                <div class="card-front card-face">
-                    <img class="vines vines-top-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-top-right" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-left" src="assets/images/vines.png" alt="vine">
-                    <img class="vines vines-bottom-right" src="assets/images/vines.png" alt="vine">
-                    <img class="card-value" src="assets/images/crocodile.ico" alt="crocodile">
-                </div>
-            </div>
-        </div>    
-
-		<!--Footer-->
-		<div class="game-info-container">
-		
-			<!--Author Name-->
-			<div class="game-info">
-				Donal O'Farrell
-			</div>
-		
-			<!--Contact Form-->
-			<div class="game-info">
-				Contact
-			</div>
-
-			<!--Github Link-->
-			<div class="game-info">
-				<a target="_blank" href="https://github.com/dof-bull">Github</a>
-			</div>
-		</div>
-    </div>
-
-	<!--jQuery Link-->
-	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-		crossorigin="anonymous"></script>
-	
-	<!--JS Script-->
-	<script src="assets/js/script.js" async></script>
-</body>
+        <!--jQuery Link-->
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+        
+        <!--JS Script-->
+        <script src="assets/js/script.js" async></script>
+    </body>
 </html>
