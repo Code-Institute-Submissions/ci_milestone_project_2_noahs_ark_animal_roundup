@@ -55,10 +55,6 @@ body {
   font-size: 1.25em;
 }
 
-.game-info.sound {
-    display: absolute;
-}
-
 .game-info-container {
   grid-column: 1 / -1;
   display: -webkit-box;
@@ -68,14 +64,6 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
-/*-------------Music Toggle-------------*/
-
-
-
-/*-------------SFX Toggle-------------*/
-
-
 
 /*-------------Overlay Text-------------*/
 
