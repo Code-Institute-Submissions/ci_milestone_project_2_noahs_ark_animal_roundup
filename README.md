@@ -168,6 +168,9 @@ JavaScript Random(https://www.w3schools.com/js/js_random.asp)
 StackOverFlow for getting my jshint to calm down with the errors.
 Why does JSHint throw a warning if I am using const?(https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const)
 
+StackOverFlow for the explanation on tab icons and how to insert one.
+How to add a browser tab icon (favicon) for a website?(https://stackoverflow.com/questions/4888377/how-to-add-a-browser-tab-icon-favicon-for-a-website)
+
 Ginifab for their excellent color picker app so I could get the HEX from images.
 (https://www.ginifab.com/feeds/pms/color_picker_from_image.php).
 
