@@ -380,10 +380,56 @@
                     Donal O'Farrell
                 </div>
             
-                <!--Contact Form-->
-                <div class="game-info">
-                    Contact
-                </div>
+				<!--Contact Modal-->
+				<div>
+					<!-- Trigger/Open The Modal -->
+					<button id="myBtn">Contact</button>
+				
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+				
+						<!-- Modal content -->
+						<div class="modal-content">
+							<span class="close">&times;</span>
+							<div>
+								<h3 class="contact-heading uppercase text-center">
+									Got a project in mind?
+								</h3>
+								<h5 class="uppercase text-center">Let's work together</h5>
+							</div>
+							<form onsubmit="return sendMail(this);">
+								<input
+							              type="text"
+							              name="name"
+							              class="form-control"
+							              id="fullname"
+							              placeholder="Name"
+							              required
+							            />
+								<input
+							              type="text"
+							              name="emailaddress"
+							              class="form-control"
+							              id="emailaddress"
+							              placeholder="Email"
+							              required
+							            />
+								<textarea
+							              rows="5"
+							              name="projectsummary"
+							              class="form-control"
+							              id="projectsummary"
+							              placeholder="Project Description"
+							              required
+							            ></textarea>
+								<button type="submit" class="btn btn-secondary center-block">
+							              Send Project Request
+							            </button>
+							</form>
+						</div>
+				
+					</div>
+				</div>
 
                 <!--Github Link-->
                 <div class="game-info">
