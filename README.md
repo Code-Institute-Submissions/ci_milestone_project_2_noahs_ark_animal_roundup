@@ -105,7 +105,8 @@ GoogleFonts for the BubblegumSans font.
 AutoPrefixer for tidying up the order of my web prefixes.
 (https://autoprefixer.github.io/)
 
-
+w3schools for their great mini tutorial on modals.
+(https://www.w3schools.com/howto/howto_css_modals.asp)
 
 ### Media
 Martin Berube via IronArchive for the adorable animal icons.

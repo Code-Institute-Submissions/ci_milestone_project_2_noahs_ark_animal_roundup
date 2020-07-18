@@ -271,7 +271,7 @@ function ready() {
     });
 }
 
-//----------Contact Modal----------
+//----------Contact Form Modal----------
 
 // Get the modal
 var modal = document.getElementById("myModal");

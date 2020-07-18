@@ -392,40 +392,50 @@
 						<div class="modal-content">
 							<span class="close">&times;</span>
 							<div>
-								<h3 class="contact-heading uppercase text-center">
+								<h2 class="contact-heading uppercase text-center">
 									Got a project in mind?
-								</h3>
-								<h5 class="uppercase text-center">Let's work together</h5>
+								</h2>
+								<h3 class="uppercase text-center">Let's work together</h3>
 							</div>
-							<form onsubmit="return sendMail(this);">
-								<input
-							              type="text"
-							              name="name"
-							              class="form-control"
-							              id="fullname"
-							              placeholder="Name"
-							              required
-							            />
-								<input
-							              type="text"
-							              name="emailaddress"
-							              class="form-control"
-							              id="emailaddress"
-							              placeholder="Email"
-							              required
-							            />
-								<textarea
-							              rows="5"
-							              name="projectsummary"
-							              class="form-control"
-							              id="projectsummary"
-							              placeholder="Project Description"
-							              required
-							            ></textarea>
-								<button type="submit" class="btn btn-secondary center-block">
-							              Send Project Request
-							            </button>
-							</form>
+                            <div class="container">
+                                <form onsubmit="return sendMail(this);">
+                                    <div>
+                                        <input
+                                                type="text"
+                                                name="name"
+                                                class="form-control"
+                                                id="fullname"
+                                                placeholder="Name"
+                                                required
+                                                />
+                                    </div>
+                                    <div>    
+                                        <input
+                                                type="text"
+                                                name="emailaddress"
+                                                class="form-control"
+                                                id="emailaddress"
+                                                placeholder="Email"
+                                                required
+                                                />
+                                    </div>
+                                    <div>
+                                        <textarea
+                                                rows="5"
+                                                name="projectsummary"
+                                                class="form-control"
+                                                id="projectsummary"
+                                                placeholder="Project Description"
+                                                required
+                                                ></textarea>
+                                    </div>
+                                    <div>
+                                        <button type="submit" class="btn btn-secondary center-block">
+                                                Send Project Request
+                                                </button>
+                                    </div>
+                                </form>
+                            </div>
 						</div>
 				
 					</div>

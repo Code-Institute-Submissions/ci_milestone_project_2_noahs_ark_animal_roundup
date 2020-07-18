@@ -69,15 +69,15 @@ body {
 
 .footer-container {
     text-align: center;
-  grid-column: 1 / -1;
-  grid-row-start: 6; 
-  grid-row-end: 7; 
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+    grid-column: 1 / -1;
+    grid-row-start: 6; 
+    grid-row-end: 7; 
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .footer-container a {
@@ -388,32 +388,48 @@ body {
             transform: scale(1);
 }
 
-/* The Modal (background) */
+/*-------------Contact Form Modal-------------*/
+
+/*-------------Modal Background-------------*/
+
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 100;
+    color: black;
+    -webkit-text-fill-color: #EC9F05;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-family: BubblegumSans, serif;
+    font-size: 1.5em;
 }
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+    background-color: #789b49;
+    margin: 10% auto; 
+    padding: 20px;
+    border: 5px solid black;
+    width: 80%;
+}
+
+.modal-content form {
+  
 }
 
 /* The Close Button */
 .close {
-  color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -421,9 +437,7 @@ body {
 
 .close:hover,
 .close:focus {
-  color: black;
   text-decoration: none;
-  cursor: pointer;
 }
 
 /*-------------Media Queries-------------*/
