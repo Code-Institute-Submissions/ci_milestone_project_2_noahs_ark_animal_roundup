@@ -5,10 +5,10 @@ by Donal O'Farrell
 
 Milestone Project 2: Interactive Development - Code Institute 
 
-One or two paragraphs providing an overview of your project.
-
-Essentially, this part is your sales pitch.
+[Noah's Ark: Animal Roundup](https://dof-bull.github.io/ci_milestone_project_2_noahs_ark_animal_roundup/) is a card matching game designed for children though also has an appeal to adults with a competitive streak. Features including click-to-play controls, two levels of difficulty, jungle themed animations and animal graphics for an overall enjoyable experience.
  
+[Play now!](https://dof-bull.github.io/ci_milestone_project_2_noahs_ark_animal_roundup/)
+
 ## UX
  
 Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
@@ -18,20 +18,65 @@ In particular, as part of this section we recommend that you provide a list of U
 
 This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
 
+
+
+#### Project Goals
+The main goal of Noah's Ark: Animal Roundup is to provide an entertaining experience for its user, whether child or adult. The game was aimed to fully playable whether on desktop or on a mobile device.
+
+#### Player Goals
+The player's goals are to enjoy the experience and to do this they have a variety of fun animal images, catchy music, biblical themed cursor and a little bit of a jump if they get a gameover.
+
+For mobile users, your final result is formatted to all be in one easy screenshot inclding your victory, flips it took you and even if you were playing on hard mode. I pictured this as something you would use as bragging rights to any other friends also playing. I remember the fads of Flappy Bird and Temple Run where this was very common.
+
+#### Developer Goals
+The developer's goals was to make a project that showed a broad range of HTML, CSS and Javascript skills for portfolio purposes. This also included a contact form direct to the developer's email plus a link to their Github page.
+
+#### User Stories
+As a child or an adult user of the game, I want:
+1. It to be easy to understand and easy to work out how to play.
+2. Audio and visual feedback so that I know when I have clicked on something.
+3. Positive audio feedback when I complete a step in the game (for example when I find a matching pair of cards), because this increases my enjoyment from playing.
+4. Images that I recognise so that I understand when I have achieved something in the game.
+
+As purely an adult user of the game, I may also want:
+1. The ability to mute the music and SFX noises from the game if they start getting annoying.
+2. A higher difficulty level for bragging rights.
+3. The abilty to know and contact who made the game.
+4. The abilty to be able to see more of the developer's work.
+
+#### Design Choices
+
+-**Font:** Bubblegum Sans was chosen for its whimsical, fun style plus it popped nicely when given a black outline.
+
+-**Icons:** The music, SFX and reset icons were all chosen for their obvious, commonly used meanings. The clock for the hardmode icon highlighted that the time is effected. The cursor was chosen to highlight the story of Noah's Ark without making it too biblical for a growng secular audience.
+
+-**Colours:** The colours were chosen to continue the jungle and bush themes created by the background image, grass and vine imagery and rustling noises.
+
+-**Styling:** Colours were kept as consistent as possible with also taking in visibility vs the background into consideration.
+
+-**Backgrounds:** The tropical image was chosen to continue the tropical jungle them as encouraged by the audio, animal choices and plant graphics.
+
+-**Card Images:** The choices of the animals was to gently encourage the Noah's Ark theme which to the developer seemed like a natural "two by two" pairing formula. Several other animal images such as lion was originally used but then discarded when it was realized the mating pair don't look the same as eachother.
+
+-**Audio Files:** The Caribbean themed song was chosen as it was upbeat and fun without any distracting lyrics. The victory song continued the Caribbean theme while sounding a lot more martine. The game-over storm music was chosen to add a little shock factor and make avoiding a game over something to be desired. The bush rustling sound worked well to give the illusion of the 'searching each bush with your staff (cursor)'.
+
+#### Wireframes
+ss
+
 ## Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
- 
 ### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
-
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+-**Time Counter:** Gives the user a visual representation of how long they have left to finish the game. Also helps add an element of suspense. NOTE: On hardcode mode the timer ticks down a at twice the speed rather then the visual number starting lower. This is unintentional element of the design.
+-**Music/SFX Toggles:** Allows the user to turn off an audio elements they migtht not enjoy. These toggle choices stay consistent through a victory, game over or reset to avoid user frustration.
+-**Reset Button:** Allows the user to start over again on a new game rather than having to wait to a game over or victory. Can allow the user to try get a better score without getting frustrated waiting. This also recalls music, SFX and hardmode toggle choices.
+-**Flip Counter:** Gives the user a visual representation of how many flips they have taken so far in the game. This is also given as a score in the victory screne to encourage replayabilty to achieve a lower amount of flips.
+-**Hardmode:** Allows the user to try the game at a harder level where they only have half the amount of time to try finish the game. Due to an unintentional element of the design, the timer ticks down a at twice the speed rather then the visual number starting lower. If the user does finish the game on hardmode, this is visually noted on the victory screen to add to the accomplishment.
+-**Contact Form:** This allows users to get direclty in touch with the developer with an easy to use form requesting name, email and their project request. This is sent directly to the developer.
+**Contact Form:** The developer's name is fully visible and a direct link to their Github page is available. This will open a new tab rather than accidently leave the game.
 
 ### Features Left to Implement
-- Game pauses whenn contact form window is open.
+- For the game to pause when contact form window is open.
+- For the timer to more accurately reflect the reduced time when on hardmode.
 
 ## Technologies Used
 
