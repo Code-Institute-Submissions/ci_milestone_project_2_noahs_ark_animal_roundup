@@ -89,6 +89,7 @@ class AnimalRoundup {
         this.ticker = document.getElementById("flips");
         this.score = document.getElementById("score");
         this.audioController = new AudioController();
+        this.hardmodeToggle = false;
     }
 
     //----------Overlays----------
@@ -118,12 +119,21 @@ class AnimalRoundup {
     }
 
     startCountdown() {
-        return setInterval(() => {
-            this.timeRemaining--;
-            this.timer.innerText = this.timeRemaining;
-            if(this.timeRemaining === 0)
-                this.gameOver();
-        }, 1000);
+        if (this.hardmodeToggle == false) {
+            return setInterval(() => {
+                this.timeRemaining--;
+                this.timer.innerText = this.timeRemaining;
+                if(this.timeRemaining === 0)
+                    this.gameOver();
+            }, 1000);
+        } else if (this.hardmodeToggle == true) {
+            return setInterval(() => {
+                this.timeRemaining--;
+                this.timer.innerText = this.timeRemaining;
+                if (this.timeRemaining === 0)
+                    this.gameOver();
+            }, 500);
+        }
     }
 
     gameOver() {
@@ -229,11 +239,13 @@ function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
     let game = new AnimalRoundup(100, cards);
+    let hardmodeGame = new AnimalRoundup(50, cards);
     let musicToggle = document.getElementById('musicToggle');
     let sfxToggle = document.getElementById('sfxToggle');
     let musicIcon = document.getElementById('music-icon');
     let sfxIcon = document.getElementById('sfx-icon');
     let resetBtn = document.getElementById('resetButton');
+    let hardmodeBtn = document.getElementById('hardmodeButton');
 
 
     //----------Overlay Start over on click----------
@@ -253,6 +265,11 @@ function ready() {
 
     //----------Reset Button----------
     resetBtn.addEventListener('click', () => {
+        game.startGame();
+    });
+
+    //----------Hardmode Toggle----------
+    hardmodeBtn.addEventListener('click', () => {
         game.startGame();
     });
 
