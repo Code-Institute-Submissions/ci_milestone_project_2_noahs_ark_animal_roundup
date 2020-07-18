@@ -89,7 +89,7 @@ class AnimalRoundup {
         this.ticker = document.getElementById("flips");
         this.score = document.getElementById("score");
         this.audioController = new AudioController();
-        this.hardmodeToggle = false;
+        this.hardmodeOn = false;
     }
 
     //----------Overlays----------
@@ -119,14 +119,14 @@ class AnimalRoundup {
     }
 
     startCountdown() {
-        if (this.hardmodeToggle == false) {
+        if (this.hardmodeOn == false) {
             return setInterval(() => {
                 this.timeRemaining--;
                 this.timer.innerText = this.timeRemaining;
                 if(this.timeRemaining === 0)
                     this.gameOver();
             }, 1000);
-        } else if (this.hardmodeToggle == true) {
+        } else if (this.hardmodeOn == true) {
             return setInterval(() => {
                 this.timeRemaining--;
                 this.timer.innerText = this.timeRemaining;
@@ -135,14 +135,16 @@ class AnimalRoundup {
             }, 500);
         }
     }
+
     hardmodeToggle() {
-        if (this.hardmodeToggle == false) {
-            this.hardmodeToggle = true;
+        if (this.hardmodeOn == true) {
+            this.hardmodeOn = false;
         }
         else {
-            this.hardmodeToggle = false;
+            this.hardmodeOn = true;
         }
     }
+
     gameOver() {
         clearInterval(this.countdown);
         this.audioController.gameOver();
@@ -278,6 +280,7 @@ function ready() {
     //----------Hardmode Toggle----------
     hardmodeToggle.addEventListener('click', () => {
         game.startGame();
+        game.hardmodeToggle();
     });
 
     //----------Music Toggle----------
@@ -311,21 +314,21 @@ var submitted = document.getElementsByClassName("submitted")[0];
 
 submitted.onclick = function () {
     modal.style.display = "none";
-}
+};
 
 // When the user clicks on the button, open the modal
 btn.onclick = function () {
     modal.style.display = "block";
-}
+};
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
     modal.style.display = "none";
-}
+};
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-}
+};
