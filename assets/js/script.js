@@ -248,13 +248,13 @@ function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
     let game = new AnimalRoundup(100, cards);
-    let hardmodeGame = new AnimalRoundup(50, cards);
     let musicToggle = document.getElementById('musicToggle');
     let sfxToggle = document.getElementById('sfxToggle');
     let musicIcon = document.getElementById('music-icon');
     let sfxIcon = document.getElementById('sfx-icon');
     let resetBtn = document.getElementById('resetButton');
     let hardmodeToggle = document.getElementById('hardmodeToggle');
+    let modeDisplay = document.getElementById('mode');
 
 
     //----------Overlay Start over on click----------
@@ -279,8 +279,9 @@ function ready() {
 
     //----------Hardmode Toggle----------
     hardmodeToggle.addEventListener('click', () => {
-        game.startGame();
         game.hardmodeToggle();
+        game.startGame();
+        modeDisplay.classList.toggle("disappear");
     });
 
     //----------Music Toggle----------

@@ -159,6 +159,10 @@ body {
     }
 }
 
+.disappear {
+    display: none;
+}
+
 /*-------------Game Over Overlay-------------*/
 
 .overlay-text.flood.visible {
