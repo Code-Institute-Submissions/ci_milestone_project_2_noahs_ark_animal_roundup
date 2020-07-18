@@ -135,7 +135,14 @@ class AnimalRoundup {
             }, 500);
         }
     }
-
+    hardmodeToggle() {
+        if (this.hardmodeToggle == false) {
+            this.hardmodeToggle = true;
+        }
+        else {
+            this.hardmodeToggle = false;
+        }
+    }
     gameOver() {
         clearInterval(this.countdown);
         this.audioController.gameOver();
@@ -245,7 +252,7 @@ function ready() {
     let musicIcon = document.getElementById('music-icon');
     let sfxIcon = document.getElementById('sfx-icon');
     let resetBtn = document.getElementById('resetButton');
-    let hardmodeBtn = document.getElementById('hardmodeButton');
+    let hardmodeToggle = document.getElementById('hardmodeToggle');
 
 
     //----------Overlay Start over on click----------
@@ -269,7 +276,7 @@ function ready() {
     });
 
     //----------Hardmode Toggle----------
-    hardmodeBtn.addEventListener('click', () => {
+    hardmodeToggle.addEventListener('click', () => {
         game.startGame();
     });
 
