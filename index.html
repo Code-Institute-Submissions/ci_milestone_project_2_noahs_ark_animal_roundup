@@ -9,6 +9,14 @@
         <meta name="keywords" content="Memory game, memory, card game, game, animals, animal game, kids, kids game, noah ark, noah, ark, bible, bible games, bible kids game">
         <meta name="author" content="Donal O'Farrell">
 
+		<!--EmailJS Link-->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+		<script type="text/javascript">
+			(function(){
+		    emailjs.init("user_acJHif69x9RMyH8Ls6HYy");
+		    })();
+		</script>
+
         <!--Tab Icon Link-->
         <link rel="icon" href="assets/images/hippo.ico" type="image/x-icon">
 
@@ -428,7 +436,7 @@
                                                 ></textarea>
                                     </div>
                                     <div>
-                                        <button type="submit" class="contact-btn">
+                                        <button type="submit" class="request-btn">
                                                 Send Project Request
                                                 </button>
                                     </div>
@@ -453,5 +461,6 @@
         
         <!--JS Script-->
         <script src="assets/js/script.js" async></script>
+		<script src="assets/js/sendEmail.js" async></script>
     </body>
 </html>
