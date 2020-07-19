@@ -11,15 +11,6 @@ Milestone Project 2: Interactive Development - Code Institute
 
 ## UX
  
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
-
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
-
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
-
-
-
 #### Project Goals
 The main goal of Noah's Ark: Animal Roundup is to provide an entertaining experience for its user, whether child or adult. The game was aimed to fully playable whether on desktop or on a mobile device.
 
@@ -46,19 +37,19 @@ As purely an adult user of the game, I may also want:
 
 #### Design Choices
 
--**Font:** Bubblegum Sans was chosen for its whimsical, fun style plus it popped nicely when given a black outline.
+- **Font:** Bubblegum Sans was chosen for its whimsical, fun style plus it popped nicely when given a black outline.
 
--**Icons:** The music, SFX and reset icons were all chosen for their obvious, commonly used meanings. The clock for the hardmode icon highlighted that the time is effected. The cursor was chosen to highlight the story of Noah's Ark without making it too biblical for a growng secular audience.
+- **Icons:** The music, SFX and reset icons were all chosen for their obvious, commonly used meanings. The clock for the hardmode icon highlighted that the time is effected. The cursor was chosen to highlight the story of Noah's Ark without making it too biblical for a growng secular audience.
 
--**Colours:** The colours were chosen to continue the jungle and bush themes created by the background image, grass and vine imagery and rustling noises.
+- **Colours:** The colours were chosen to continue the jungle and bush themes created by the background image, grass and vine imagery and rustling noises.
 
--**Styling:** Colours were kept as consistent as possible with also taking in visibility vs the background into consideration.
+- **Styling:** Colours were kept as consistent as possible with also taking in visibility vs the background into consideration.
 
--**Backgrounds:** The tropical image was chosen to continue the tropical jungle them as encouraged by the audio, animal choices and plant graphics.
+- **Backgrounds:** The tropical image was chosen to continue the tropical jungle them as encouraged by the audio, animal choices and plant graphics.
 
--**Card Images:** The choices of the animals was to gently encourage the Noah's Ark theme which to the developer seemed like a natural "two by two" pairing formula. Several other animal images such as lion was originally used but then discarded when it was realized the mating pair don't look the same as eachother.
+- **Card Images:** The choices of the animals was to gently encourage the Noah's Ark theme which to the developer seemed like a natural "two by two" pairing formula. Several other animal images such as lion was originally used but then discarded when it was realized the mating pair don't look the same as eachother.
 
--**Audio Files:** The Caribbean themed song was chosen as it was upbeat and fun without any distracting lyrics. The victory song continued the Caribbean theme while sounding a lot more martine. The game-over storm music was chosen to add a little shock factor and make avoiding a game over something to be desired. The bush rustling sound worked well to give the illusion of the 'searching each bush with your staff (cursor)'.
+- **Audio Files:** The Caribbean themed song was chosen as it was upbeat and fun without any distracting lyrics. The victory song continued the Caribbean theme while sounding a lot more martine. The game-over storm music was chosen to add a little shock factor and make avoiding a game over something to be desired. The bush rustling sound worked well to give the illusion of the 'searching each bush with your staff (cursor)'.
 
 #### Wireframes
 ss
@@ -66,13 +57,19 @@ ss
 ## Features
 
 ### Existing Features
--**Time Counter:** Gives the user a visual representation of how long they have left to finish the game. Also helps add an element of suspense. NOTE: On hardcode mode the timer ticks down a at twice the speed rather then the visual number starting lower. This is unintentional element of the design.
--**Music/SFX Toggles:** Allows the user to turn off an audio elements they migtht not enjoy. These toggle choices stay consistent through a victory, game over or reset to avoid user frustration.
--**Reset Button:** Allows the user to start over again on a new game rather than having to wait to a game over or victory. Can allow the user to try get a better score without getting frustrated waiting. This also recalls music, SFX and hardmode toggle choices.
--**Flip Counter:** Gives the user a visual representation of how many flips they have taken so far in the game. This is also given as a score in the victory screne to encourage replayabilty to achieve a lower amount of flips.
--**Hardmode:** Allows the user to try the game at a harder level where they only have half the amount of time to try finish the game. Due to an unintentional element of the design, the timer ticks down a at twice the speed rather then the visual number starting lower. If the user does finish the game on hardmode, this is visually noted on the victory screen to add to the accomplishment.
--**Contact Form:** This allows users to get direclty in touch with the developer with an easy to use form requesting name, email and their project request. This is sent directly to the developer.
-**Contact Form:** The developer's name is fully visible and a direct link to their Github page is available. This will open a new tab rather than accidently leave the game.
+- **Time Counter:** Gives the user a visual representation of how long they have left to finish the game. Also helps add an element of suspense. NOTE: On hardcode mode the timer ticks down a at twice the speed rather then the visual number starting lower. This is unintentional element of the design.
+
+- **Music/SFX Toggles:** Allows the user to turn off an audio elements they migtht not enjoy. These toggle choices stay consistent through a victory, game over or reset to avoid user frustration.
+
+- **Reset Button:** Allows the user to start over again on a new game rather than having to wait to a game over or victory. Can allow the user to try get a better score without getting frustrated waiting. This also recalls music, SFX and hardmode toggle choices.
+
+- **Flip Counter:** Gives the user a visual representation of how many flips they have taken so far in the game. This is also given as a score in the victory screne to encourage replayabilty to achieve a lower amount of flips.
+
+- **Hardmode:** Allows the user to try the game at a harder level where they only have half the amount of time to try finish the game. Due to an unintentional element of the design, the timer ticks down a at twice the speed rather then the visual number starting lower. If the user does finish the game on hardmode, this is visually noted on the victory screen to add to the accomplishment.
+
+- **Contact Form:** This allows users to get direclty in touch with the developer with an easy to use form requesting name, email and their project request. This is sent directly to the developer.
+
+- **Github Link:** The developer's name is fully visible and a direct link to their Github page is available. This will open a new tab rather than accidently leave the game.
 
 ### Features Left to Implement
 - For the game to pause when contact form window is open.
@@ -80,10 +77,24 @@ ss
 
 ## Technologies Used
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+- This project uses HTML, CSS and JavaScript programming languages.
+- [Gitpod](https://gitpod.io/workspaces/) 
+    - Developer used **Gitpod** for their IDE while building the website.
+- [Bootstrap](https://www.bootstrapcdn.com/)
+    - The project uses Bootstrap to provide icons from [FontAwesome](https://www.bootstrapcdn.com/fontawesome/)
+- [Google Fonts](https://fonts.google.com/)
+    - The project uses **Google fonts** to style the website fonts.
+- [GitHub](https://github.com/)
+    - This project uses **GitHub** to store and share all project code remotely. 
+- [Photoshop](www.adobe.com/Photoshop)
+    - This project used tools in **Photohshop** to edit, crop and save images as well as ulitising the colour picker to ensure color consistency over the entire project.
+- [Browserstack](https://www.browserstack.com/)
+    - The project used **Browserstack** to test functionality on all browsers and devices.
+- [AutoPrefixer](https://autoprefixer.github.io/)
+    - The project used **AutoPrefixer** to make sure all css prefixes were the most up to date versions. 
 
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
+## Difficulties Encountered
+
 
 
 ## Testing
