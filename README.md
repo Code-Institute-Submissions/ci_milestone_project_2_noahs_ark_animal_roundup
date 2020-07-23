@@ -1,5 +1,36 @@
 ![Animal Roundup Card](assets/images/hippo.ico)
  
+## Table of Contents
+1. [**UX**](#ux)
+    - [**Project Goals**](#project-goals)
+    - [**Player goals**](#player-goals)
+    - [**Parental goals**](#parental-goals)
+    - [**Developer Goals**](#developer-goals)
+    - [**User Stories**](#user-stories)
+    - [**Design choices**](#design-choices)
+    - [**Wireframes**](#wireframes)
+
+2. [**Features**](#features)
+    - [**Existing Features**](#existing-features)
+    - [**Features Left to Implement**](#features-left-to-implement)
+
+3. [**Technologies used**](#technologies-used)
+
+4. [**Testing**](#testing)
+    - [**Code Validators**](#code-validators)
+    - [**Testing Devices**](#testing-devices)
+    - [**Testers**](#testers)
+    - [**Feature Testing**](#feature-testing)
+    - [**Difficulties Encountered**](#difficulties-encountered)
+
+5. [**Deployment**](#deployment)
+    - [**How to run this project locally**](#how-to-run-this-project-locally)
+
+6. [**Credits**](#credits)
+    - [**Content**](#content)
+    - [**Media**](#media)
+    - [**Acknowledgements**](#acknowledgements)
+
 # Noah's Ark: Animal Roundup
 by Donal O'Farrell
  
@@ -90,13 +121,13 @@ This project uses HTML, CSS and JavaScript programming languages.
  
 #### Code Validators
 - [Dillinger](https://dillinger.io/)
-    - This was used for Markdown in this README.md.
+This was used for Markdown in this README.md.
  
 - [W3](http://validator.w3.org/)
-    - This was used to check the HTML and CSS in this project.
+This was used to check the HTML and CSS in this project.
  
 - [JSHint](https://jshint.com/)
-    - This was used to check the JavaScript in this project.
+This was used to check the JavaScript in this project.
  
 #### Testing devices
 - Desktop 
@@ -270,4 +301,3 @@ How to add a browser tab icon (favicon) for a website?(https://stackoverflow.com
 - ReduceImages.com so I could lower the resolution of the background image for faster loading speeds. 
 (https://www.reduceimages.com/)
  
-
