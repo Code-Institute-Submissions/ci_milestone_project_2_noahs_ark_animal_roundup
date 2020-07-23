@@ -4,7 +4,6 @@
 1. [**UX**](#ux)
     - [**Project Goals**](#project-goals)
     - [**Player goals**](#player-goals)
-    - [**Parental goals**](#parental-goals)
     - [**Developer Goals**](#developer-goals)
     - [**User Stories**](#user-stories)
     - [**Design choices**](#design-choices)
