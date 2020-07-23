@@ -1,5 +1,14 @@
 ![Animal Roundup Card](assets/images/hippo.ico)
  
+# Noah's Ark: Animal Roundup
+by Donal O'Farrell
+ 
+Milestone Project 2: Interactive Development - Code Institute 
+ 
+[Noah's Ark: Animal Roundup](https://dof-bull.github.io/ci_milestone_project_2_noahs_ark_animal_roundup/) is a card matching game designed for children though also has an appeal to adults with a competitive streak. Features including click-to-play controls, two levels of difficulty, jungle themed animations and animal graphics for an overall enjoyable experience.
+ 
+[Play now!](https://dof-bull.github.io/ci_milestone_project_2_noahs_ark_animal_roundup/)
+
 ## Table of Contents
 1. [**UX**](#ux)
     - [**Project Goals**](#project-goals)
@@ -29,15 +38,6 @@
     - [**Content**](#content)
     - [**Media**](#media)
     - [**Acknowledgements**](#acknowledgements)
-
-# Noah's Ark: Animal Roundup
-by Donal O'Farrell
- 
-Milestone Project 2: Interactive Development - Code Institute 
- 
-[Noah's Ark: Animal Roundup](https://dof-bull.github.io/ci_milestone_project_2_noahs_ark_animal_roundup/) is a card matching game designed for children though also has an appeal to adults with a competitive streak. Features including click-to-play controls, two levels of difficulty, jungle themed animations and animal graphics for an overall enjoyable experience.
- 
-[Play now!](https://dof-bull.github.io/ci_milestone_project_2_noahs_ark_animal_roundup/)
  
 ## UX
  
