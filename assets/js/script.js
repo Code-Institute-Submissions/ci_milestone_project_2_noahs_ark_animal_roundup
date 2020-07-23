@@ -118,7 +118,6 @@ class AnimalRoundup {
     }
 
     startCountdown() {
-    
         return setInterval(() => {
             this.timeRemaining--;
             this.timer.innerText = this.timeRemaining;
@@ -262,6 +261,7 @@ function ready() {
     //---------- Gamemode Toggle ----------
 
     function gamemodeToggle(totalTime) {
+        game.audioController.stopMusic();
         game = new AnimalRoundup(totalTime, cards);
         game.startGame();
         modeDisplay.classList.toggle("disappear");
