@@ -1,4 +1,4 @@
-//----------Audio Controls----------
+//---------- Audio Controls ----------
 
 class AudioController {
     constructor() {
@@ -78,7 +78,7 @@ class AudioController {
     }
 }
 
-//----------Main Function----------
+//---------- Main Function ----------
 
 class AnimalRoundup {
     constructor(totalTime, cards) {
@@ -89,10 +89,9 @@ class AnimalRoundup {
         this.ticker = document.getElementById("flips");
         this.score = document.getElementById("score");
         this.audioController = new AudioController();
-        this.hardmodeOn = false;
     }
 
-    //----------Overlays----------
+    //---------- Overlays ----------
 
     startGame() {
         if (this.countdown !== undefined)
@@ -119,30 +118,13 @@ class AnimalRoundup {
     }
 
     startCountdown() {
-        if (this.hardmodeOn == false) {
-            return setInterval(() => {
-                this.timeRemaining--;
-                this.timer.innerText = this.timeRemaining;
-                if(this.timeRemaining === 0)
-                    this.gameOver();
-            }, 1000);
-        } else if (this.hardmodeOn == true) {
-            return setInterval(() => {
-                this.timeRemaining--;
-                this.timer.innerText = this.timeRemaining;
-                if (this.timeRemaining === 0)
-                    this.gameOver();
-            }, 500);
-        }
-    }
-
-    hardmodeToggle() {
-        if (this.hardmodeOn == true) {
-            this.hardmodeOn = false;
-        }
-        else {
-            this.hardmodeOn = true;
-        }
+    
+        return setInterval(() => {
+            this.timeRemaining--;
+            this.timer.innerText = this.timeRemaining;
+            if(this.timeRemaining === 0)
+                this.gameOver();
+        }, 1000);
     }
 
     gameOver() {
@@ -157,7 +139,7 @@ class AnimalRoundup {
         document.getElementById('victory-text').classList.add('visible');
     }
 
-    //----------Card Functionality----------
+    //---------- Card Functionality ----------
 
     hideCards() {
         this.cardsArray.forEach(card => {
@@ -182,7 +164,7 @@ class AnimalRoundup {
         }
     }
 
-    //----------Check to see if cards match----------
+    //---------- Check to see if cards match ----------
     checkForCardMatch(card) {
         if(this.getCardType(card) === this.getCardType(this.cardToCheck))
             this.cardMatch(card, this.cardToCheck);
@@ -192,7 +174,7 @@ class AnimalRoundup {
         this.cardToCheck = null;
     }
 
-    //----------Cards are a match----------
+    //---------- Cards are a match ----------
     cardMatch(card1, card2) {
         this.matchedCards.push(card1);
         this.matchedCards.push(card2);
@@ -203,7 +185,7 @@ class AnimalRoundup {
             this.victory();
     }
 
-    //----------Cards are not a match----------
+    //---------- Cards are not a match ----------
      cardMisMatch(card1, card2) {
         this.busy = true;
         setTimeout(() => {
@@ -213,17 +195,17 @@ class AnimalRoundup {
         }, 1000);
     }
 
-    //----------Check to see the card type----------
+    //---------- Check to see the card type ----------
     getCardType(card) {
         return card.getElementsByClassName('card-value')[0].src;
     }
 
-    //----------Check to see if cards are allowed to flip----------
+    //---------- Check to see if cards are allowed to flip ----------
     canFlipCard(card) {
         return (!this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck);
     }
 
-    //----------Fisher-Yates Shuffle Algorithm----------
+    //---------- Fisher-Yates Shuffle Algorithm ----------
 
     shuffleCards() {
         for (let i = this.cardsArray.length - 1; i > 0; i--) {
@@ -234,7 +216,7 @@ class AnimalRoundup {
     }
 }
 
-//----------Initial Loader----------
+//---------- Initial Loader ----------
 
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready);
@@ -242,7 +224,7 @@ if (document.readyState == 'loading') {
     ready();
 }
 
-//----------Ready Function----------
+//---------- Ready Function ----------
 
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
@@ -253,11 +235,11 @@ function ready() {
     let musicIcon = document.getElementById('music-icon');
     let sfxIcon = document.getElementById('sfx-icon');
     let resetBtn = document.getElementById('resetButton');
-    let hardmodeToggle = document.getElementById('hardmodeToggle');
+    let normalMode = document.getElementById('normalMode');
+    let hardMode = document.getElementById('hardMode');
     let modeDisplay = document.getElementById('mode');
 
-
-    //----------Overlay Start over on click----------
+    //---------- Overlay Start over on click ----------
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
             overlay.classList.remove('visible');
@@ -265,33 +247,46 @@ function ready() {
         });
     });
 
-    //----------Flip cards over on click----------
+    //---------- Flip cards over on click ----------
     cards.forEach(card => {
         card.addEventListener('click', () => {
             game.flipCard(card);
         });
     });
 
-    //----------Reset Button----------
+    //---------- Reset Button ----------
     resetBtn.addEventListener('click', () => {
         game.startGame();
     });
 
-    //----------Hardmode Toggle----------
-    hardmodeToggle.addEventListener('click', () => {
-        game.hardmodeToggle();
+    //---------- Gamemode Toggle ----------
+
+    function gamemodeToggle(totalTime) {
+        game = new AnimalRoundup(totalTime, cards);
         game.startGame();
         modeDisplay.classList.toggle("disappear");
+    }
+
+    //---------- Normal Mode ----------
+    normalMode.addEventListener('click', () => {
+        clearInterval(game.countdown);
+        gamemodeToggle(100);
     });
 
-    //----------Music Toggle----------
+    //---------- Hard Mode ----------
+    hardMode.addEventListener('click', () => {
+        clearInterval(game.countdown);
+        gamemodeToggle(50);
+    });
+
+    //---------- Music Toggle ----------
     musicToggle.addEventListener('click', () => {
         musicIcon.classList.toggle("fa-volume-up");
         musicIcon.classList.toggle("fa-volume-off");
         game.audioController.musicToggle();
     });
 
-    //----------SFX Toggle----------
+    //---------- SFX Toggle ----------
     sfxToggle.addEventListener('click', () => {
         sfxIcon.classList.toggle("fa-volume-up");
         sfxIcon.classList.toggle("fa-volume-off");
@@ -299,7 +294,7 @@ function ready() {
     });
 }
 
-//----------Contact Form Modal (from W3Schools tutorial in Credit)----------
+//---------- Contact Form Modal (from W3Schools tutorial in Credit) ----------
 
 // Get the modal
 var modal = document.getElementById("myModal");

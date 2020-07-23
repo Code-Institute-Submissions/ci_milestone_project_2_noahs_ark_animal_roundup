@@ -9,14 +9,6 @@
         <meta name="keywords" content="Memory game, memory, card game, game, animals, animal game, kids, kids game, noah ark, noah, ark, bible, bible games, bible kids game">
         <meta name="author" content="Donal O'Farrell">
 
-		<!--EmailJS Link-->
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-		<script type="text/javascript">
-			(function(){
-		    emailjs.init("user_acJHif69x9RMyH8Ls6HYy");
-		    })();
-		</script>
-
         <!--Tab Icon Link-->
         <link rel="icon" href="assets/images/hippo.ico" type="image/x-icon">
 
@@ -384,11 +376,14 @@
             <!--Footer-->
             <div class="footer-container">
             
-				<!--Hardmode Toggle-->
-				<div id="hardmodeToggle" class="game-info">
-					<div>Hardmode <i id="hardmode-icon" class="fa fa-clock-o" aria-hidden="true"></i></div>
-				</div>
-            
+				<!--Gamemode Buttons-->
+                <div id="normalMode" class="game-info">
+                    <div class="highlight">Normal</div>
+                </div>
+                <div id="hardMode" class="game-info">
+                    <div class="">Hard</div>
+                </div>
+
 				<!--Contact Modal-->
 				<div>
 					<!-- Trigger/Open The Modal -->
@@ -460,6 +455,14 @@
             </div>
         </div>
         
+		<!--EmailJS Link-->
+		<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+		<script>
+			(function(){
+				    emailjs.init("user_acJHif69x9RMyH8Ls6HYy");
+				    })();
+		</script>
+
         <!--JS Script-->
         <script src="assets/js/script.js" async></script>
 		<script src="assets/js/sendEmail.js" async></script>
