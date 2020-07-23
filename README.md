@@ -27,6 +27,7 @@ Milestone Project 2: Interactive Development - Code Institute
 4. [**Testing**](#testing)
     - [**Code Validators**](#code-validators)
     - [**Testing Devices**](#testing-devices)
+    - [**Testing Browsers**](#testing-browsers)
     - [**Testers**](#testers)
     - [**Feature Testing**](#feature-testing)
     - [**Difficulties Encountered**](#difficulties-encountered)
@@ -68,7 +69,7 @@ As purely an adult user of the game, I may also want:
 #### Design Choices
  
 - **Font:** Bubblegum Sans was chosen for its whimsical, fun style plus it popped nicely when given a black outline.
-- **Icons:** The music, SFX and reset icons were all chosen for their obvious, commonly used meanings. The clock for the hardmode icon highlighted that the time is affected. The cursor was chosen to highlight the story of Noah's Ark without making it too biblical for a growing secular audience.
+- **Icons:** The music, SFX and reset icons were all chosen for their obvious, commonly used meanings. The cursor was chosen to highlight the story of Noah's Ark without making it too biblical for a growing secular audience.
 - **Colours:** The colours were chosen to continue the jungle and bush themes created by the background image, grass and vine imagery and rustling noises.
 - **Styling:** Colours were kept as consistent as possible with also taking in visibility vs the background into consideration.
 - **Backgrounds:** The tropical image was chosen to continue the tropical jungle theme as encouraged by the audio, animal choices and plant graphics.
@@ -88,17 +89,17 @@ As purely an adult user of the game, I may also want:
 ## Features
  
 #### Existing Features
-- **Time Counter:** Gives the user a visual representation of how long they have left to finish the game. Also helps add an element of suspense. NOTE: On hardcode mode the timer ticks down at twice the speed rather then the visual number starting lower. This is an unintentional element of the design.
+- **Time Counter:** Gives the user a visual representation of how long they have left to finish the game. Also helps add an element of suspense.
 - **Music/SFX Toggles:** Allows the user to turn off audio elements they might not enjoy. These toggle choices stay consistent through a victory, game over or reset to avoid user frustration.
-- **Reset Button:** Allows the user to start over again on a new game rather than having to wait for a game over or victory. Can allow the user to try to get a better score without getting frustrated waiting. This also recalls music, SFX and hardmode toggle choices.
+- **Reset Button:** Allows the user to start over again on a new game rather than having to wait for a game over or victory. Can allow the user to try to get a better score without getting frustrated waiting. This also recalls music and SFX toggle choices and difficulty.
 - **Flip Counter:** Gives the user a visual representation of how many flips they have taken so far in the game. This is also given as a score in the victory screen to encourage replayability to achieve a lower amount of flips.
-- **Hardmode:** Allows the user to try the game at a harder level where they only have half the amount of time to try finish the game. Due to an unintentional element of the design, the timer ticks down at twice the speed rather than the visual number starting lower. If the user does finish the game on hardmode, this is visually noted on the victory screen to add to the accomplishment.
+- **Hardmode:** Allows the user to try the game at a harder level where they only have half the amount of time to try finish the game. This is visually noted on the victory screen to add to the accomplishment.
 - **Contact Form:** This allows users to get directly in touch with the developer with an easy to use form requesting name, email and their project request. This is sent directly to the developer.
 - **Github Link:** The developer's name is fully visible and a direct link to their Github page is available. This will open a new tab rather than accidently leave the game.
  
 #### Features Left to Implement
 - For the game to pause when the contact form window is open.
-- For the timer to more accurately reflect the reduced time when on hardmode.
+- When changing difficulties, audio toggles need to stay consistent.
  
 ## Technologies Used
  
@@ -133,6 +134,12 @@ This was used to check the JavaScript in this project.
 - iphone 6
 - Huawei P30 lite
  
+#### Testing Browsers
+- Chrome 
+- Safari
+- Microsoft Edge
+- Mozilla Firefox
+
 #### Testers
 Special thanks to:
 - Aria Keane (6)
@@ -142,21 +149,23 @@ Special thanks to:
 The wide age gap between the testers gave the developer a better understanding of certain diffuclties and expectations e.g. original background music was too intense for the 6 year old.
 
 #### Feature Testing
-- **Time Counter:** Accurately counts down time in normal mode. Double ticks on hardmode (explained below). Successfully triggers Game Over when it hits zero.
-- **Music/SFX Toggles:** Both toggles fully work on desktop and mobile and toggle position remains as selected when reset or hardmode is triggered.
+- **Time Counter:** Accurately counts down time in both normal and hard modes. Successfully triggers Game Over when it hits zero.
+- **Music/SFX Toggles:** Both toggles fully work on desktop and mobile and toggle position remains as selected when reset.
 - **Reset Button:** Rest button works on both desktop and mobile devices. Fully returns cards face down, in new positions and resets timer and flip count.
 - **Flip Counter:** Accurately reflects the number of flips clicked. Does not count up when illegal clicks occur. Resets on game over, victory and new game.
-- **Hardmode:** Successfully triggers hardmode which resets into a new game where clock ticker goes down twice as fast. Not ideal but explained below. This also successfully triggers a statement declaring the user won on hardmode if they get a victory screen while it's toggled.
+- **Hardmode:** Successfully triggers hardmode which resets game with only 50 seconds to win as opposed to the 100 seconds on normal mode. This also successfully triggers a statement declaring the user won on hardmode if they get a victory screen while it's toggled.
 - **Contact Form:** Form opens when click on desktop and mobile and closes when top right x is clicked, anywhere outside the box is clicked. Email sends to the developer with the name, email address and message when 'Send Request' is clicked.
 - **Github Link:** Successfully links to Github page on both desktop and mobile device.
  
 #### Difficulties Encountered
-- The biggest difficulty faced in this project was trying to bring in a fully functional hardmode without having to rewrite the entire code. It was found that trying to create a separate hardmode function broke the code all over the place. The work around was for a hardmode toggle to cause the timer to go down twice as fast though still visually showing the original 100 seconds.
+- The biggest difficulty faced in this project was trying to bring in a fully functional hardmode without having to rewrite the entire code. It was found that trying to create a separate hardmode function broke the code all over the place. This was finally solved with the use of an internal funcition and the previous hardmodeToggle function was removed.
  
 - The option of hardmode adding more cards instead of a reduced time was highly considered but it was decided that this would not function on mobile devices due to cards being too small so it was dropped for a time challenge instead. The ability to keep it accessible for mobile devices was considered worth it.
  
 - After getting all the music and sfx toggles fully functional, a new difficulty arose when the reset button started a total new game and put the toggle back to their starting positions which is on by default. This was fully worked through in the end and is fully functional as intended.
  
+- The above sound issue arose again with the introduction of the normal and hard mode buttons. This resets the sound regardless of toggle postions. This can only be fixed by a complete refactoring of the code and will be remedied for future releases.
+
 - Displaying the final flip count in the victory screen proved to be more difficult than originally thought but was solved by making a clone function of flips called score.
  
 - Keeping the card sizes viable for mobile took a lot of playing around with media queries but this was achieved.
