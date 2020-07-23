@@ -8,7 +8,7 @@ Milestone Project 2: Interactive Development - Code Institute
 [Noah's Ark: Animal Roundup](https://dof-bull.github.io/ci_milestone_project_2_noahs_ark_animal_roundup/) is a card matching game designed for children though also has an appeal to adults with a competitive streak. Features including click-to-play controls, two levels of difficulty, jungle themed animations and animal graphics for an overall enjoyable experience.
  
 [Play now!](https://dof-bull.github.io/ci_milestone_project_2_noahs_ark_animal_roundup/)
-
+ 
 ## Table of Contents
 1. [**UX**](#ux)
     - [**Project Goals**](#project-goals)
@@ -17,13 +17,13 @@ Milestone Project 2: Interactive Development - Code Institute
     - [**User Stories**](#user-stories)
     - [**Design choices**](#design-choices)
     - [**Wireframes**](#wireframes)
-
+ 
 2. [**Features**](#features)
     - [**Existing Features**](#existing-features)
     - [**Features Left to Implement**](#features-left-to-implement)
-
+ 
 3. [**Technologies used**](#technologies-used)
-
+ 
 4. [**Testing**](#testing)
     - [**Code Validators**](#code-validators)
     - [**Testing Devices**](#testing-devices)
@@ -31,10 +31,10 @@ Milestone Project 2: Interactive Development - Code Institute
     - [**Testers**](#testers)
     - [**Feature Testing**](#feature-testing)
     - [**Difficulties Encountered**](#difficulties-encountered)
-
+ 
 5. [**Deployment**](#deployment)
     - [**How to run this project locally**](#how-to-run-this-project-locally)
-
+ 
 6. [**Credits**](#credits)
     - [**Content**](#content)
     - [**Media**](#media)
@@ -55,7 +55,7 @@ The developer's goals was to make a project that showed a broad range of HTML, C
  
 #### User Stories
 As a child or an adult user of the game, I want:
-1. It to be easy to understand and easy to work out how to play.
+1. It is easy to understand and easy to work out how to play.
 2. Audio and visual feedback so that I know when I have clicked on something.
 3. Positive audio feedback when I complete a step in the game (for example when I find a matching pair of cards), because this increases my enjoyment from playing.
 4. Images that I recognise so that I understand when I have achieved something in the game.
@@ -139,33 +139,33 @@ This was used to check the JavaScript in this project.
 - Safari
 - Microsoft Edge
 - Mozilla Firefox
-
+ 
 #### Testers
 Special thanks to:
 - Aria Keane (6)
 - Amy Buckley (28)
 - Jo O'Farrell (60+)
-
-The wide age gap between the testers gave the developer a better understanding of certain diffuclties and expectations e.g. original background music was too intense for the 6 year old.
-
+ 
+The wide age gap between the testers gave the developer a better understanding of certain difficulties and expectations e.g. original background music was too intense for the 6 year old.
+ 
 #### Feature Testing
 - **Time Counter:** Accurately counts down time in both normal and hard modes. Successfully triggers Game Over when it hits zero.
 - **Music/SFX Toggles:** Both toggles fully work on desktop and mobile and toggle position remains as selected when reset.
 - **Reset Button:** Rest button works on both desktop and mobile devices. Fully returns cards face down, in new positions and resets timer and flip count.
 - **Flip Counter:** Accurately reflects the number of flips clicked. Does not count up when illegal clicks occur. Resets on game over, victory and new game.
-- **Hardmode:** Successfully triggers hardmode which resets game with only 50 seconds to win as opposed to the 100 seconds on normal mode. This also successfully triggers a statement declaring the user won on hardmode if they get a victory screen while it's toggled.
+- **Hardmode:** Successfully triggers hardmode which resets the game with only 50 seconds to win as opposed to the 100 seconds on normal mode. This also successfully triggers a statement declaring the user won on hardmode if they get a victory screen while it's toggled.
 - **Contact Form:** Form opens when click on desktop and mobile and closes when top right x is clicked, anywhere outside the box is clicked. Email sends to the developer with the name, email address and message when 'Send Request' is clicked.
 - **Github Link:** Successfully links to Github page on both desktop and mobile device.
  
 #### Difficulties Encountered
-- The biggest difficulty faced in this project was trying to bring in a fully functional hardmode without having to rewrite the entire code. It was found that trying to create a separate hardmode function broke the code all over the place. This was finally solved with the use of an internal funcition and the previous hardmodeToggle function was removed.
+- The biggest difficulty faced in this project was trying to bring in a fully functional hardmode without having to rewrite the entire code. It was found that trying to create a separate hardmode function broke the code all over the place. This was finally solved with the use of an internal function and the previous hardmodeToggle function was removed.
  
 - The option of hardmode adding more cards instead of a reduced time was highly considered but it was decided that this would not function on mobile devices due to cards being too small so it was dropped for a time challenge instead. The ability to keep it accessible for mobile devices was considered worth it.
  
 - After getting all the music and sfx toggles fully functional, a new difficulty arose when the reset button started a total new game and put the toggle back to their starting positions which is on by default. This was fully worked through in the end and is fully functional as intended.
  
-- The above sound issue arose again with the introduction of the normal and hard mode buttons. This resets the sound regardless of toggle postions. This can only be fixed by a complete refactoring of the code and will be remedied for future releases.
-
+- The above sound issue arose again with the introduction of the normal and hard mode buttons. This resets the sound regardless of toggle positions. This can only be fixed by a complete refactoring of the code and will be remedied for future releases.
+ 
 - Displaying the final flip count in the victory screen proved to be more difficult than originally thought but was solved by making a clone function of flips called score.
  
 - Keeping the card sizes viable for mobile took a lot of playing around with media queries but this was achieved.
@@ -308,4 +308,3 @@ How to add a browser tab icon (favicon) for a website?(https://stackoverflow.com
  
 - ReduceImages.com so I could lower the resolution of the background image for faster loading speeds. 
 (https://www.reduceimages.com/)
- 
